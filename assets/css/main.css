@@ -2474,15 +2474,7 @@ input, select, textarea {
 			clear: left;
 			float: left;
 		}
-		/* MyCode */
-		dl.alt2 dt {
-			display: block;
-			width: 100%;
-			margin: 0;
-			clear: left;
-			float: left;
-		}
-		/* End */
+
 		dl.alt dd {
 			margin: 0 0 0.85em 5.5em;
 		}
@@ -3795,3 +3787,31 @@ input, select, textarea {
 			}
 
 		}
+
+	/* MY CODE */
+	dl.alt2 dt {
+		display: block;
+		width: 100%;
+		margin: 0;
+		clear: left;
+		float: left;
+	}
+	img.scale {
+		display: inline;
+		margin: 0 auto;
+		height: 75%;
+		width: 75%; 
+		}
+	img.image-cropper {
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		}
+	ul.extra-margin {
+		margin-top: 7.5em;
+	}
+	.align-right {
+		text-align: right;
+	}
+	/* END */
+		
