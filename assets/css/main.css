@@ -3476,11 +3476,13 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+				/* display: none; */
+				display: flex;
+				flex-wrap: wrap;
 			}
 
 				#nav + #main {
-					padding-top: 0;
+					padding-top: 7.5em;
 				}
 
 		}
@@ -4095,7 +4097,7 @@ input, select, textarea {
 		top: 16px;
 		left: 50%;
 		margin-left: -19px;
-		background-color: #999999;
+		background-color: #02637A;
 		z-index: 100;
 		border-top-right-radius: 50%;
 		border-top-left-radius: 50%;
@@ -4120,7 +4122,7 @@ input, select, textarea {
 		left: -14px;
 		right: auto;
 	  }
-	  .timeline-badge.primary {
+	  /* .timeline-badge.primary {
 		background-color: #2e6da4 !important;
 	  }
 	  .timeline-badge.success {
@@ -4134,7 +4136,7 @@ input, select, textarea {
 	  }
 	  .timeline-badge.info {
 		background-color: #5bc0de !important;
-	  }
+	  } */
 	  .timeline-title {
 		margin-top: 0;
 		color: inherit;
