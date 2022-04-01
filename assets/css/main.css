@@ -98,12 +98,13 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
+	body {	/* 000010, 0006ab, 22aadd	*/
 		background-color: #02637A;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(30deg, #020f19 15%, #02637a 85%), #01A9BF;
-		background-image: url("images/overlay.png"), linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);	/* 000010, 0006ab, 22aadd	*/
+		background-image: url("images/overlay.png"), linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -119,7 +120,7 @@ input, select, textarea {
 
 /* Type */
 
-	body {
+	body {	/* can see on scrool track */
 		background-color: rgba(120, 240, 255, 0.25);
 		color: rgba(255, 255, 255, 0.65);
 	}
