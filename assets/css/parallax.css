@@ -1,9 +1,11 @@
 #my-body {
     /* background-image: url(https://www.pngmart.com/files/7/Network-PNG-Transparent.png), */
     background-image:
-    url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/dense-hot-nodes.png),
-    url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/hot-nodes.png);
-    
+    /* depth 3 -> depth 2 -> depth 1*/
+    /* url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/hot-nodes.png), */
+    /* url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/blue-nodes.png), */
+    url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/green-nodes.png),
+    url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/green-blue-nodes.png);
     background-color: #022A39;
     color: rgba(255, 255, 255, 0.65);   /* affect "Computer Science major @ Gettysburg College" */
 }

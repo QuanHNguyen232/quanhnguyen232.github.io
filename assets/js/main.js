@@ -8,7 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$main = $('#main');
+		$main = $('#main');	// the whole nav bar
 
 	// Breakpoints.
 		breakpoints({
