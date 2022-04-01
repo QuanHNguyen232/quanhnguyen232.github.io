@@ -100,10 +100,10 @@ input, select, textarea {
 	/* SECONDARY BACKGROUND */
 	body {
 		background-color: #02637A;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(30deg, #020f19 15%, #02637a 85%), #01A9BF;
-		background-image: url("images/overlay.png"), linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(30deg, #01A9BF 15%, #02637a 85%, #020f19);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(30deg, #01A9BF 15%, #02637a 85%, #020f19);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(30deg, #01A9BF 15%, #02637a 85%), #020f19;
+		background-image: url("images/overlay.png"), linear-gradient(30deg, #01A9BF 15%, #02637a 85%, #020f19);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,14 +120,13 @@ input, select, textarea {
 /* Type */
 	/* MAIN BACKGROUND */
 	body {
-		/* background-image: url(https://www.pngmart.com/files/7/Network-PNG-Transparent.png), */
-		background-image:
-		url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/parallax-back-ground.png),
-		url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/pngkey.com-triangle-background-png-5776388.png);
-		background-color: #022A39;
+		background-color: #02637A;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(30deg, #020f19 15%, #02637a 85%), #01A9BF;
+		background-image: url("images/overlay.png"), linear-gradient(30deg, #020f19 15%, #02637a 85%, #01A9BF);
 		color: rgba(255, 255, 255, 0.65);
 	}
-
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
@@ -3739,7 +3738,7 @@ input, select, textarea {
 		#main .spotlight .image {
 			border-color: #dddddd;
 		}
-
+		/* main text are has gap */
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
@@ -3963,13 +3962,13 @@ input, select, textarea {
 		overflow: hidden;
 		border-radius: 50%;
 		}
+
 	ul.extra-margin {
 		margin-top: 7.5em;
 	}
 	.align-right {
 		text-align: right;
 	}
-
 	.my-font {
 		/* font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 		font-family: 'Lucida Handwriting', 'Brush Script MT', 'Papyrus', cursive, Verdana, sans-serif;

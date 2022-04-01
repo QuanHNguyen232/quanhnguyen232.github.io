@@ -1,7 +1,7 @@
 (function() {
     // Add event listener
     document.addEventListener("mousemove", parallax);
-    const elem = document.querySelector("body");
+    const elem = document.querySelector("#my-body");
     // Magic happens here
     function parallax(e) {
         let _w = window.innerWidth/2;
