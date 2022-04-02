@@ -53,3 +53,53 @@ img.edu-parallax-scroll-2 {
     background-size: cover;
     min-height: 550px;
 }
+
+@media screen and (max-width: 736px) {
+
+    .about-parallax-scroll {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/quan_image_tall.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 500px;
+    }
+    img.edu-parallax-scroll-1 {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/gettysburg_image_tall.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow-y: auto;
+        min-height: 250px;
+    }
+    img.edu-parallax-scroll-2 {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/ptnk_s1720.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 500px;
+    }
+    .exp-parallax-scroll {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/working-table.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 550px;
+    }
+
+}
