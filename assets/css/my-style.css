@@ -1,0 +1,546 @@
+/* MY CODE */
+dl.alt2 dt {
+    display: block;
+    width: 100%;
+    margin: 0;
+    clear: left;
+    float: left;
+}
+
+img.scale {
+    display: inline;
+    margin: 0 auto;
+    height: 75%;
+    width: 75%;
+}
+
+img.image-cropper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+ul.extra-margin {
+    margin-top: 7.5em;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.my-font {
+    /* font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Lucida Handwriting', 'Brush Script MT', 'Papyrus', cursive, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* END */
+
+
+/*  PARALLAX
+    MOUSE
+    MOVEMENT
+*/
+#my-body {
+    /* background-image: url(https://www.pngmart.com/files/7/Network-PNG-Transparent.png), */
+    background-image:
+        /* depth 3 -> depth 2 -> depth 1*/
+        /* url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/hot-nodes.png), */
+        /* url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/blue-nodes.png), */
+        url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/green-nodes.png),
+        url(https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/green-blue-nodes.png);
+    background-color: #022A39;
+    color: rgba(255, 255, 255, 0.65);
+    /* affect "Computer Science major @ Gettysburg College" */
+}
+
+/*  PARRALLAX
+    SCROLL
+*/
+.about-parallax-scroll {
+    background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/hiking.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+}
+
+img.edu-parallax-scroll-1 {
+    background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/gettysburg_image.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+}
+
+img.edu-parallax-scroll-2 {
+    background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/ptnk_s1720.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.exp-parallax-scroll {
+    background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/working-table.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 980px) {
+
+    .about-parallax-scroll {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/quan_image_tall.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 375px;
+    }
+
+    .edu-parallax-scroll-1 {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/gettysburg_image_tall.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 375px;
+    }
+
+    .edu-parallax-scroll-2 {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/ptnk_s1720.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 375px;
+    }
+
+    .exp-parallax-scroll {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/working-table.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 375px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+
+    .about-parallax-scroll {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/quan_image_tall.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 250px;
+    }
+
+    .edu-parallax-scroll-1 {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/gettysburg_image_tall.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 250px;
+    }
+
+    .edu-parallax-scroll-2 {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/ptnk_s1720.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 250px;
+    }
+
+    .exp-parallax-scroll {
+        background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/working-table.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 250px;
+    }
+
+}
+
+/* SETUP
+    SCROLLBAR
+    https://dev.to/xtrp/how-to-create-a-beautiful-custom-scrollbar-for-your-site-in-plain-css-1mjg
+*/
+div.my-border:hover {
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(34, 170, 221, 0.5);
+    border-radius: 20px;
+}
+
+div.overflow {
+    width: 100%;
+    height: 25em;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(1, 170, 190, 0.5);
+    border-radius: 20px;
+    /* curved corner */
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(1, 170, 190, 1);
+}
+
+/* 
+	SETUP
+	TIMELINE
+	https://codepen.io/jasondavis/pen/nXLJbg
+	*/
+.timeline-mid {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+/* vertical line */
+.timeline-mid:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 15px;
+    background-color: rgba(1, 170, 190, 0.5);
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+/* distance b/w boxes */
+.timeline-mid>li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-mid>li:before,
+.timeline-mid>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-mid>li:after {
+    clear: both;
+}
+
+.timeline-mid>li:before,
+.timeline-mid>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-mid>li:after {
+    clear: both;
+}
+
+/* all box */
+.timeline-mid>li>.timeline-panel {
+    width: 45%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+/* arrow on LEFT */
+.timeline-mid>li>.timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+/* arrow on LEFT */
+.timeline-mid>li>.timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+/* circle node */
+.timeline-mid>li>.timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -19px;
+    background-color: #02637A;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/* push to RIGHT */
+.timeline-mid>li.timeline-inverted>.timeline-panel {
+    float: right;
+}
+
+/* arrow on RIGHT */
+.timeline-mid>li.timeline-inverted>.timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+/* arrow on RIGHT */
+.timeline-mid>li.timeline-inverted>.timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+/* .timeline-badge.primary {
+            background-color: #2e6da4 !important;
+        }
+        .timeline-badge.success {
+            background-color: #3f903f !important;
+        }
+        .timeline-badge.warning {
+            background-color: #f0ad4e !important;
+        }
+        .timeline-badge.danger {
+            background-color: #d9534f !important;
+        }
+        .timeline-badge.info {
+            background-color: #5bc0de !important;
+        } */
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body>p,
+.timeline-body>ul {
+    margin-bottom: 0;
+}
+
+.timeline-body>p+p {
+    margin-top: 5px;
+}
+
+/* 
+            LEFT
+            TIMELINE  
+        */
+.timeline-left {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+/* vertical line */
+.timeline-left:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 15px;
+    background-color: rgba(1, 170, 190, 0.5);
+    left: 0%;
+    margin-left: -1.5px;
+}
+
+/* distance b/w boxes */
+.timeline-left>li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-left>li:before,
+.timeline-left>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-left>li:after {
+    clear: both;
+}
+
+.timeline-left>li:before,
+.timeline-left>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-left>li:after {
+    clear: both;
+}
+
+/* all boxes */
+.timeline-left>li>.timeline-panel {
+    width: 100%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+/* circle node */
+.timeline-left>li>.timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 0%;
+    margin-left: -19px;
+    background-color: #02637A;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/* arrow on LEFT */
+.timeline-left>li>.timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+/* arrow on LEFT */
+.timeline-left>li>.timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+/* push to RIGHT */
+.timeline-left>li.timeline-inverted>.timeline-panel {
+    /* float: right; */
+    left: 5%;
+}
+
+/* arrow on RIGHT */
+.timeline-left>li.timeline-inverted>.timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+/* arrow on RIGHT */
+.timeline-left>li.timeline-inverted>.timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body>p,
+.timeline-body>ul {
+    margin-bottom: 0;
+}
+
+.timeline-body>p+p {
+    margin-top: 5px;
+}
