@@ -69,7 +69,7 @@ ul.extra-margin {
     min-height: 500px;
 }
 
-img.edu-parallax-scroll-1 {
+.edu-parallax-scroll-1 {
     background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/gettysburg_image.jpg');
     background-attachment: fixed;
     background-position: center center;
@@ -81,7 +81,7 @@ img.edu-parallax-scroll-1 {
     min-height: 500px;
 }
 
-img.edu-parallax-scroll-2 {
+.edu-parallax-scroll-2 {
     background: url('https://raw.githubusercontent.com/QuanHNguyen232/quanhnguyen232.github.io/main/images/ptnk_s1720.jpg');
     background-attachment: fixed;
     background-position: center center;
