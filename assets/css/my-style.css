@@ -6,7 +6,10 @@ dl.alt2 dt {
     clear: left;
     float: left;
 }
-
+img.flag-icon {
+    width: 25px;
+    float: right;
+}
 img.scale {
     display: inline;
     margin: 0 auto;
