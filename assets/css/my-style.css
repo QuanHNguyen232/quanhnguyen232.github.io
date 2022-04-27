@@ -6,7 +6,7 @@ dl.alt2 dt {
     clear: left;
     float: left;
 }
-img.flag-icon {
+.right-icon {
     width: 25px;
     float: right;
 }
