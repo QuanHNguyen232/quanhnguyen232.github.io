@@ -1,0 +1,30 @@
+<div class="col">
+  <a href="{% if photo.redirect %}{{ photo.redirect }}{% else %}{{ photo.url | relative_url }}{% endif %}">
+    <div class="card h-100 hoverable">
+      {% if photo.img %}
+        {%
+          include figure.liquid
+          loading="lazy"
+          path=photo.img
+          sizes="250px"
+          alt="photo thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ photo.title }}</h2>
+        <p class="card-text">{{ photo.description }}</p>
+        <p class="post-meta mb-0">
+          <i class="fa-solid fa-calendar fa-sm"></i> {{ photo.date | date: '%B %d, %Y' }}
+          {% if photo.tags and photo.tags.size > 0 %}
+            &nbsp; &middot; &nbsp;
+            {% for tag in photo.tags %}
+              <span class="badge badge-pill">{{ tag }}</span>
+              {% unless forloop.last %} {% endunless %}
+            {% endfor %}
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </a>
+</div>

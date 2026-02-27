@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
@@ -27,8 +27,27 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Feel free to reach me at: quanhnguyen232@gmail.com.
+I'm looking for New Grad and Early Career (full-time) starting 5/2026:
+- Machine Learning Engineer (MLE)
+- or Software Engineer (SWE)
+- or Data Scientist (DS)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I've experience as MLE, focus on
+- LLM fine-tuning/inference
+- Recommendation Systems
+- ML system
+- MLOps
+Besides, I've worked on AI Agents, distributed system, cloud infrastructure.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Tasks include:
+- ML/MLOps: PyTorch, Hugging Face, DeepSpeed, vLLM, Ray, Transformers, Aiflow
+- Distributed System: Ray, Spark, Kafka, HDFS
+- Cloud & Ops: AWS, Azure, GCP, Docker, Kubernetes, Helm, Terraform, GKE
+
+Furthermore, I have research experience, including publications at AAAI, as well as research conducted at Purdue University and MSU.
+
+Meanwhile, I'd love to keep an open mind to explore other related paths as well.
+
+
+<!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->

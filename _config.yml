@@ -7,7 +7,7 @@ first_name: Quan
 middle_name: H.
 last_name: Nguyen
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to contact me via email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -16,7 +16,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon/bugcat.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/{path-to-image})
 
 url: https://quanhnguyen232.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -91,8 +91,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: my blogs # blog_name will be displayed in your blog page
+blog_description: a place where I share my thoughts and experiences.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -164,6 +164,11 @@ collections:
     output: true
   teachings:
     output: true
+  photos:
+    output: true
+    permalink: /photos/:path/
+    defaults:
+      layout: page
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -199,7 +204,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -270,6 +274,12 @@ jekyll-archives:
       categories: "/blog/:type/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  photos:
+    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    permalinks:
+      year: "/photos/:year/"
+      tags: "/photos/:type/:name/"
+      categories: "/photos/:type/:name/"
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog

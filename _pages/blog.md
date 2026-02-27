@@ -1,9 +1,9 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Blog
 nav: true
-nav_order: 1
+nav_order: 10
 pagination:
   enabled: true
   collection: posts
@@ -12,8 +12,8 @@ pagination:
   sort_field: date
   sort_reverse: true
   trail:
-    before: 1 # The number of links before the current page
-    after: 3 # The number of links after the current page
+    before: 2 # The number of links before the current page
+    after: 2 # The number of links after the current page
 ---
 
 <div class="post">
