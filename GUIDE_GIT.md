@@ -37,6 +37,14 @@ git pull --ff-only origin main
 git checkout -b edit/my-content
 ```
 
+OR update branch from main
+```bash
+git checkout main
+git pull --ff-only origin main
+git checkout edit/my-content
+git merge origin/main
+```
+
 Edit files, then:
 
 ```bash

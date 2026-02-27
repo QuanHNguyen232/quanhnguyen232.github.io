@@ -4,7 +4,7 @@ title: Photos
 permalink: /photos/
 description: A growing collection of photos by category.
 nav: false
-display_categories: [work, fun, nature]
+display_categories: [work, fun, nature, food]
 horizontal: false
 ---
 
