@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "This is my CV.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -451,7 +451,22 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "photos-weekend-fun",
+          section: "News",},{id: "photos-london-2022",
+          title: 'London 2022',
+          description: "Afternoon tea and Oxford Street in London.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_7/";
+            },},{id: "photos-gettysburg",
+          title: 'Gettysburg',
+          description: "Winter adventures, snowboarding, and campus life at Gettysburg.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_6/";
+            },},{id: "photos-saigon-2024",
+          title: 'Saigon 2024',
+          description: "Cà phê, vỏ chai, and street life in Saigon.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_11/";
+            },},{id: "photos-weekend-fun",
           title: 'Weekend Fun',
           description: "Capturing memorable moments with friends.",
           section: "Photos",handler: () => {
@@ -461,6 +476,16 @@ ninja.data = [{
           description: "Scenic views from a hike through the mountains.",
           section: "Photos",handler: () => {
               window.location.href = "/photos/photo_2/";
+            },},{id: "photos-my-2024",
+          title: 'My 2024',
+          description: "A snapshot of the year.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_8/";
+            },},{id: "photos-philly-2024-25",
+          title: 'Philly 2024–25',
+          description: "Matcha, SHPE BBQ, and fun in Philadelphia.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_10/";
             },},{id: "photos-sample-photo-album",
           title: 'Sample Photo Album',
           description: "A sample photo collection with images from various places.",
@@ -471,6 +496,16 @@ ninja.data = [{
           description: "A sample photo collection with images from various places.",
           section: "Photos",handler: () => {
               window.location.href = "/photos/photo_4/";
+            },},{id: "photos-nyc-2025",
+          title: 'NYC 2025',
+          description: "New York bagels and pizza.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_9/";
+            },},{id: "photos-adobe-amp-west-coast",
+          title: 'Adobe &amp;amp; West Coast',
+          description: "Office life, San Jose, and Seattle July 4th.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_5/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
