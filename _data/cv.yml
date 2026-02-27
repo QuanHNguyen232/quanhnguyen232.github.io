@@ -4,186 +4,146 @@ cv:
   email: quanhnguyen232@gmail.com
   location: College Park, MD
   image: ""
-  summary: A theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Machine Learning student at University of Maryland, College Park
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
+    # - network: X
+    #   username: QuanHNguyen232
     - network: GitHub
-      username: example
+      username: QuanHNguyen232
     - network: LinkedIn
-      username: example
+      username: QuanHNguyen232
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
+    street: NA
+    city: College Park
+    region: MD
+    postalCode: 20740
     countryCode: US
 
   sections:
     Education:
-      - institution: University of Zurich
+      - institution: University of Maryland, College Park
         location: College Park, MD
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+        url: https://www.umd.edu/
+        area: Computer Science
+        studyType: Master of Science
+        start_date: 2024
+        end_date: 2026
         score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+        courses: "Machine Learning"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: College Park, MD
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Gettysburg College
+        location: Gettysburg, MD
+        url: https://www.gettysburg.edu/
+        area: Computer Science
+        studyType: Bachelor of Science
+        start_date: 2020
+        end_date: 2024
+        score: 3.8
         highlights:
-          - Description 1.
-          - Description 2.
+          - Phi Beta Kappa Society member
+          - David Wills Scholarship recipient
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Venera AI
+        position: Machine Learning Engineer Intern - LLM Post-training & ML System
+        location: New York, NY
+        start_date: 2025-02
+        end_date: 2026
+        summary: Developed and deployed a scalable and efficient LLM post-training and ML system to improve the accuracy and efficiency of the model.
         highlights:
-          - Relativity
-          - Description 2.
+          - Fine-tuned (SFT and distillation) Qwen3 to compress knowledge using QLoRA + DeepSpeed ZeRO-3 
+          - Engineered a high-throughput inference for LLM; support prefix/KV caching, continuous batching.
+          - Deployed LLM on TPU v5 (2x4 pod, 8 chips), establishing a cost-efficient alternative to GPUs.
+          - Rebuilt data pipeline Spark with Ray Data, managed via Airflow, 3x throughput to 1M+ tok/min.
+          - Consolidated CI/CD (GitHub Actions + Terraform + Helm) and monitoring (Grafana + Prometheus).
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Adobe
+        position: Machine Learning Engineer Intern - AI Agent
+        location: San Jose, CA
+        start_date: 2025-05
+        end_date: 2025-08
+        summary: Developed and deployed a scalable and efficient AI agent to improve the accuracy and efficiency of the model.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Developed Voice Agent features combining planning, speech recognition, and emotion-aware TTS.
+          - Built AI-agent using LangChain, LangGraph, and MCP to integrate into Adobe multi-agent system.
+          - Deployed production models via vLLM, Ray Serve, FastAPI, integrated with Kubernetes and ArgoCD.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: College Park, MD
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: College Park, MD
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: VCCorp Corporation
+        position: Machine Learning Engineer Intern - Recommendation System
+        location: HCMC, Vietnam
+        start_date: 2024-06
+        end_date: 2024-08
+        summary: Developed and deployed a scalable and efficient recommendation system to improve the accuracy and efficiency of the model.
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Developed a scalable and efficient recommendation system to improve the accuracy and efficiency of the model.
+          - Developed a scalable and efficient recommendation system to improve the accuracy and efficiency of the model.
+
+    # Volunteer:
+    #   - company: Viet Career Guide
+    #     position: Volunteer
+    #     location: San Jose, CA
+    #     start_date: 2025
+    #     end_date: 2025
+    #     summary: Volunteer networking events that helps Vietnamese students and professionals connect with each other.
+    #     highlights:
+    #       - Organized networking events for Vietnamese students and professionals to connect with each other.
 
     Awards:
-      - title: Nobel Prize in Physics
+      - title: ICPC Participant
         authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+          - "ICPC"
+        date: 2022
+        awarder: ICPC
+        url: https://icpc.io/
+        summary: ICPC is a competitive programming contest for university students.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: Predicting Perceived Music Emotions with Respect to Instrument Combinations
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - Nguyen, Viet Dung
+          - Nguyen, Quan H.
+          - Freedman, Richard G.
+        publisher: AAAI
+        releaseDate: 2024-07
+        url: https://ojs.aaai.org/index.php/AAAI/article/view/26910
+        summary: Music Emotion Recognition has attracted a lot of academic research work in recent years because it has a wide range of applications, including song recommendation and music visualization. As music is a way for humans to express emotion, there is a need for a machine to automatically infer the perceived emotion of pieces of music. In this paper, we compare the accuracy difference between music emotion recognition models given music pieces as a whole versus music pieces separated by instruments. To compare the models’ emotion predictions, which are distributions over valence and arousal values, we provide a metric that compares two distribution curves. Using this metric, we provide empirical evidence that training Random Forest and Convolution Recurrent Neural Network with mixed instrumental music data conveys a better understanding of emotion than training the same models with music that are separated into each instrumental source.
 
     Skills:
-      - name: Physics
-        level: Master
+      - name: Machine Learning
+        level: Advanced
         icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+        keywords: "LLM, Recommendation System, ML System, MLOps"
 
     Languages:
-      - name: German
+      - name: Vietnamese
         summary: "Native speaker"
 
       - name: English
         summary: "Fluent"
 
     Interests:
-      - name: Physics
+      - name: Machine Learning
         icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+        keywords: "LLM, Recommendation System, ML System, MLOps"
 
     Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
+      - name: Fundamentals of MCP
+        date: 2025-07
+        issuer: Hugging Face
         icon: fa-solid fa-location-dot
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: High-Performance Distributed Training (HPC)
+        summary: Accelerated 3D scene reconstruction training by 50% by implementing distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Implemented distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
+          - Optimized the training process by 50% by implementing distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
+        start_date: 2025
+        end_date: 2025
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    # References:
+    #   - name: Professor John Doe
+    #     icon: fa-solid fa-laptop
+    #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
