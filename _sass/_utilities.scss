@@ -6,6 +6,15 @@
 
 // Code and syntax highlighting
 
+// Override comment color in code blocks
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs {
+  color: var(--global-code-comment-color) !important;
+}
+
 figure.highlight {
   margin: 0 0 1rem;
 
