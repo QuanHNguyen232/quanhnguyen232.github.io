@@ -1,14 +1,16 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - quanhnguyen232
+  # - alshedivat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - QuanHNguyen232/LeetCode
+  - QuanHNguyen232/TensorTonic-Solutions
+  # - alshedivat/al-folio
+  # - jekyll/jekyll
+  # - twbs/bootstrap
+  # - jquery/jquery
+  # - FortAwesome/Font-Awesome
+  # - mathjax/MathJax
+  # - jpswalsh/academicons

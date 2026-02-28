@@ -18,7 +18,7 @@ cv:
     street: NA
     city: College Park
     region: MD
-    postalCode: 20740
+    postalCode: "20740"
     countryCode: US
 
   sections:
@@ -28,8 +28,8 @@ cv:
         url: https://www.umd.edu/
         area: Computer Science
         studyType: Master of Science
-        start_date: 2024
-        end_date: 2026
+        start_date: "2024"
+        end_date: "2026"
         score: ""
         courses: "Machine Learning"
 
@@ -38,9 +38,9 @@ cv:
         url: https://www.gettysburg.edu/
         area: Computer Science
         studyType: Bachelor of Science
-        start_date: 2020
-        end_date: 2024
-        score: 3.8
+        start_date: "2020"
+        end_date: "2024"
+        score: "3.8"
         highlights:
           - Phi Beta Kappa Society member
           - David Wills Scholarship recipient
@@ -49,11 +49,11 @@ cv:
       - company: Venera AI
         position: Machine Learning Engineer Intern - LLM Post-training & ML System
         location: New York, NY
-        start_date: 2025-02
-        end_date: 2026
+        start_date: "2025-02"
+        end_date: "2026"
         summary: Developed and deployed a scalable and efficient LLM post-training and ML system to improve the accuracy and efficiency of the model.
         highlights:
-          - Fine-tuned (SFT and distillation) Qwen3 to compress knowledge using QLoRA + DeepSpeed ZeRO-3 
+          - Fine-tuned (SFT and distillation) Qwen3 to compress knowledge using QLoRA + DeepSpeed ZeRO-3
           - Engineered a high-throughput inference for LLM; support prefix/KV caching, continuous batching.
           - Deployed LLM on TPU v5 (2x4 pod, 8 chips), establishing a cost-efficient alternative to GPUs.
           - Rebuilt data pipeline Spark with Ray Data, managed via Airflow, 3x throughput to 1M+ tok/min.
@@ -62,8 +62,8 @@ cv:
       - company: Adobe
         position: Machine Learning Engineer Intern - AI Agent
         location: San Jose, CA
-        start_date: 2025-05
-        end_date: 2025-08
+        start_date: "2025-05"
+        end_date: "2025-08"
         summary: Developed and deployed a scalable and efficient AI agent to improve the accuracy and efficiency of the model.
         highlights:
           - Developed Voice Agent features combining planning, speech recognition, and emotion-aware TTS.
@@ -73,8 +73,8 @@ cv:
       - company: VCCorp Corporation
         position: Machine Learning Engineer Intern - Recommendation System
         location: HCMC, Vietnam
-        start_date: 2024-06
-        end_date: 2024-08
+        start_date: "2024-06"
+        end_date: "2024-08"
         summary: Developed and deployed a scalable and efficient recommendation system to improve the accuracy and efficiency of the model.
         highlights:
           - Developed a scalable and efficient recommendation system to improve the accuracy and efficiency of the model.
@@ -94,7 +94,7 @@ cv:
       - title: ICPC Participant
         authors:
           - "ICPC"
-        date: 2022
+        date: "2022"
         awarder: ICPC
         url: https://icpc.io/
         summary: ICPC is a competitive programming contest for university students.
@@ -106,7 +106,7 @@ cv:
           - Nguyen, Quan H.
           - Freedman, Richard G.
         publisher: AAAI
-        releaseDate: 2024-07
+        releaseDate: "2024-07"
         url: https://ojs.aaai.org/index.php/AAAI/article/view/26910
         summary: Music Emotion Recognition has attracted a lot of academic research work in recent years because it has a wide range of applications, including song recommendation and music visualization. As music is a way for humans to express emotion, there is a need for a machine to automatically infer the perceived emotion of pieces of music. In this paper, we compare the accuracy difference between music emotion recognition models given music pieces as a whole versus music pieces separated by instruments. To compare the models’ emotion predictions, which are distributions over valence and arousal values, we provide a metric that compares two distribution curves. Using this metric, we provide empirical evidence that training Random Forest and Convolution Recurrent Neural Network with mixed instrumental music data conveys a better understanding of emotion than training the same models with music that are separated into each instrumental source.
 
@@ -130,7 +130,7 @@ cv:
 
     Certificates:
       - name: Fundamentals of MCP
-        date: 2025-07
+        date: "2025-07"
         issuer: Hugging Face
         icon: fa-solid fa-location-dot
 
@@ -140,8 +140,8 @@ cv:
         highlights:
           - Implemented distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
           - Optimized the training process by 50% by implementing distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
-        start_date: 2025
-        end_date: 2025
+        start_date: "2025"
+        end_date: "2025"
 
     # References:
     #   - name: Professor John Doe
