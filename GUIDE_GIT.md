@@ -6,7 +6,7 @@ This workflow is the standard “fork + upstream remote + periodic merges/rebase
 
 ## 0) One-time setup (local repo + upstream remote)
 
-### Clone *your* GitHub Pages repo
+### Clone _your_ GitHub Pages repo
 
 ```bash
 git clone https://github.com/QuanHNguyen232/quanhnguyen232.github.io.git
@@ -22,8 +22,8 @@ git remote -v
 
 You should see:
 
-* `origin` → your repo
-* `upstream` → alshedivat/al-folio
+- `origin` → your repo
+- `upstream` → alshedivat/al-folio
 
 ---
 
@@ -38,6 +38,7 @@ git checkout -b edit/my-content
 ```
 
 OR update branch from main
+
 ```bash
 git checkout main
 git pull --ff-only origin main
@@ -145,8 +146,8 @@ So: **keep deploying from `main`** (default), unless you’ve explicitly configu
 
 To check your Pages setting quickly:
 
-* Repo → **Settings** → **Pages**
-* See “Build and deployment”
+- Repo → **Settings** → **Pages**
+- See “Build and deployment”
 
 ---
 
@@ -189,8 +190,8 @@ git rebase --continue
 
 ## 6) Practical tips to reduce merge conflicts (especially for al-folio)
 
-* Try to put your info mostly in config/data/content files (like `_config.yml`, `_data/`, and pages), and avoid heavily editing theme/layout internals unless needed.
-* When upstream updates hit the same files you edited (e.g., layout includes), conflicts will happen more often—normal for templates. ([GitHub][1])
+- Try to put your info mostly in config/data/content files (like `_config.yml`, `_data/`, and pages), and avoid heavily editing theme/layout internals unless needed.
+- When upstream updates hit the same files you edited (e.g., layout includes), conflicts will happen more often—normal for templates. ([GitHub][1])
 
 ---
 
@@ -198,3 +199,18 @@ If you paste (or screenshot) what your **Settings → Pages** shows (“Deploy f
 
 [1]: https://github.com/alshedivat/al-folio/discussions/3545?utm_source=chatgpt.com "Customizability of v1.0 · alshedivat al-folio"
 [2]: https://github.com/al-folio/al-folio.github.io?utm_source=chatgpt.com "GitHub - al-folio/al-folio.github.io: A beautiful, simple, clean, ..."
+
+## Docker (based on INSTALL.md)
+
+```bash
+docker compose pull
+# -d: detach
+docker compose up --build -d
+# -f: watch logs
+docker compose logs -f
+```
+
+Run prettier
+```bash
+MSYS_NO_PATHCONV=1 docker run --rm -v "$(pwd):/app" -w /app node:20 sh -c "npm install && npx prettier . --write"
+```

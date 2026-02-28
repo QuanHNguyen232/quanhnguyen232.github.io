@@ -72,7 +72,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/photos/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-comprehensive-guide-to-deploying-vllm-on-gke",
+        
+          title: "Comprehensive Guide to Deploying vLLM on GKE",
+        
+        description: "A production guide for deploying vLLM on GKE with GPU and TPU strategies",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/deploy-vllm/";
+          
+        },
+      },{id: "post-guide-to-deploy-ray-cluster-on-gke",
+        
+          title: "Guide to deploy Ray Cluster on GKE",
+        
+        description: "A step-by-step production guide for Ray Cluster deployment distributed ML and LLM workloads",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/deploy-ray/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
