@@ -38,7 +38,9 @@ horizontal: false
 {% else %}
 
 <!-- Display all photos sorted by date (newest first) -->
+
 {% assign sorted_photos = site.photos | sort: "date" | reverse %}
+
 <div class="row row-cols-1 row-cols-md-3">
   {% for photo in sorted_photos %}
     {% include photos.liquid %}
