@@ -1,5 +1,5 @@
 ---
-layout: distillpost
+layout: distill2
 title: Guide to deploy Ray Cluster on GKE
 date: 2026-02-28
 description: A step-by-step production guide for Ray Cluster deployment distributed ML and LLM workloads

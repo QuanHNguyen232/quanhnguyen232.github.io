@@ -7,10 +7,10 @@ dropdown: true
 children:
   - title: publications
     permalink: /publications/
-  - title: divider
-  - title: teaching
-    permalink: /teaching/
-  - title: divider
-  - title: people
-    permalink: /people/
+  # - title: divider
+  # - title: teaching
+  #   permalink: /teaching/
+  # - title: divider
+  # - title: people
+  #   permalink: /people/
 ---
