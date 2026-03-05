@@ -2,14 +2,14 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.linkedin.com/in/quanhnguyen232/'>Linkedin/</a>. #Address. Contacts. Motto. Etc.
+subtitle: ":four_leaf_clover: Dreams come true :four_leaf_clover:" # Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>8700 Baltimore Ave.</p>
+    <p>quanhnguyen232 [at] gmail [dot] com</p>
     <p>College Park, MD 20740</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}" in /_bibliography/papers.bib
@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Feel free to reach me at: quanhnguyen232@gmail.com.
+
 I'm looking for New Grad and Early Career (full-time) starting 5/2026:
 
 - Machine Learning Engineer (MLE)
