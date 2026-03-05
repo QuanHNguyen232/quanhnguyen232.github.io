@@ -2,7 +2,7 @@
 layout: page
 title: Academics
 nav: true
-nav_order: 50
+nav_order: 60
 dropdown: true
 children:
   - title: publications

@@ -2,7 +2,7 @@
 layout: page
 title: Hobbies
 nav: true
-nav_order: 60
+nav_order: 70
 dropdown: true
 children:
   # - title: bookshelf
