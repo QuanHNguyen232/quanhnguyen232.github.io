@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-news",
+          title: "News",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "This is my CV.",
@@ -195,13 +202,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/QuanHNguyen232", "_blank");
-        },
-      },{
-        id: 'social-work',
-        title: 'Work',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://quanhnguyen232.github.io/", "_blank");
         },
       },{
       id: 'light-theme',
