@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-news",
-          title: "News",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/news/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "This is my CV.",
@@ -37,6 +30,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/publications/";
               },
+            },{id: "dropdown-bookshelf",
+              title: "bookshelf",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/books/";
+              },
             },{id: "dropdown-photos",
               title: "photos",
               description: "",
@@ -44,7 +44,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/photos/";
               },
-            },{id: "post-comprehensive-guide-to-deploying-vllm-on-gke",
+            },{id: "post-brief-of-ml-coding-interview-questions-leetcode-style",
+        
+          title: "Brief of ML coding interview questions (Leetcode style)",
+        
+        description: "Some examples for ML coding interview",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/leetcode-ml/";
+          
+        },
+      },{id: "post-brief-of-data-structure-amp-algorithm-coding-interview-questions",
+        
+          title: "Brief of Data-Structure &amp; Algorithm coding interview questions",
+        
+        description: "Some concepts, topics, and examples for Leetcode coding interview",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/leetcode-dsa/";
+          
+        },
+      },{id: "post-comprehensive-guide-to-deploying-vllm-on-gke",
         
           title: "Comprehensive Guide to Deploying vLLM on GKE",
         
@@ -66,22 +88,31 @@ ninja.data = [{
             window.location.href = "/blog/2026/deploy-ray/";
           
         },
-      },{id: "post-just-a-moment",
-        
-          title: 'Just a moment... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/pinterest-engineering/last-mile-data-processing-with-ray-629affbf34ff", "_blank");
-          
-        },
-      },{id: "books-the-godfather",
+      },{id: "books-hồi-ký-năng-khiếu",
+          title: 'Hồi Ký Năng Khiếu',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/hoi_ky_nang_khieu/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "books-designing-data-intensive-applications",
+          title: 'Designing Data-Intensive Applications',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/designing_data_intensive_applications/";
+            },},{id: "books-introduction-to-machine-learning-systems",
+          title: 'Introduction to Machine Learning Systems',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ml_systems/";
+            },},{id: "books-machine-learning-system-design-interview",
+          title: 'Machine Learning System Design Interview',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ml_sys_design_interview/";
             },},{id: "news-i-start-my-internship-at-adobe-sparkles-smile",
           title: 'I start my internship at Adobe! :sparkles: :smile:',
           description: "",
