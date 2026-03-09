@@ -17,6 +17,8 @@ authors:
   - name: Quan Nguyen
     affiliations:
       name: Venera AI
+citation: true
+bibliography: 2026-02-28-deploy-vllm.bib
 ---
 
 Deploying Large Language Models (LLMs) requires precise orchestration of specialized hardware and optimized software. vLLM is a high-throughput serving engine that, when combined with Google Kubernetes Engine (GKE), provides a scalable production environment for inference.<d-footnote>See <a href="https://docs.vllm.ai/">vLLM Documentation</a>, <a href="https://cloud.google.com/kubernetes-engine/docs">GKE Documentation</a>, and <a href="https://cloud.google.com/kubernetes-engine/docs/integrations/ai-infra">AI/ML orchestration on GKE</a> for official guides.</d-footnote> This comprehensive guide details how to select resources and deploy vLLM for both GPU and TPU use cases, with professional, step-by-step instructions and the necessary GCP configurations and Kubernetes manifests.
@@ -36,7 +38,7 @@ This guide will walk you through the end-to-end setup for both compute paths, de
 
 ## Resource Selection Strategy
 
-<aside><p><strong>Reference:</strong> <a href="https://cloud.google.com/kubernetes-engine/docs">GKE docs</a> · <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-gpus#request-gpus">Request GPUs (Autopilot)</a> · <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus">GPU Support</a> · <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/tpus">TPU Support</a></p></aside>
+<aside><p><strong>Reference:</strong> <a href="https://cloud.google.com/kubernetes-engine/docs">GKE docs</a> · <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-gpus#request-gpus">Request GPUs (Autopilot)</a> · <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus">GPU Support</a></p></aside>
 
 Choosing the correct infrastructure is the most critical step in LLM deployment. The following configurations are based on model size and performance requirements.
 
@@ -49,7 +51,7 @@ GKE offers two operating modes. For most high-performance LLM workloads, **Stand
 | **Autopilot** | Fully managed; minimal ops | Per-pod resource requests |
 | **Standard** | Full control; performance tuning | Custom node pools with specific accelerators |
 
-### GPU Accelerator Selection
+### GPU Accelerator Selection<d-cite key="google_cloud_gpus"></d-cite>
 
 GPUs provide broad compatibility with the vLLM ecosystem.
 
@@ -57,7 +59,7 @@ GPUs provide broad compatibility with the vLLM ecosystem.
 * **NVIDIA A100 (40GB/80GB):** The industry standard for large models (32B+). 80GB version is preferred for long context windows.
 * **NVIDIA H100 (80GB):** Highest performance for massive models or ultra-low latency requirements.
 
-### TPU Accelerator Selection
+### TPU Accelerator Selection<d-cite key="google_cloud_tpus"></d-cite>
 
 TPUs are Google's custom-built AI accelerators, often offering better price-to-performance for specific model architectures supported by JAX/XLA.
 

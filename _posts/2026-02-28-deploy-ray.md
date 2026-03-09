@@ -17,6 +17,8 @@ authors:
   - name: Quan Nguyen
     affiliations:
       name: Venera AI
+citation: true
+bibliography: 2026-02-28-deploy-ray.bib
 ---
 
 If you're building large-scale ML systems - distributed training, batch inference, or LLM serving with **vLLM** - combining **Kubernetes + Ray + GKE** gives you a powerful, production-ready stack.<d-footnote>See <a href="https://docs.ray.io/en/latest/cluster/kubernetes/index.html">Ray on Kubernetes</a>, <a href="https://docs.ray.io/en/latest/cluster/getting-started.html">Ray Clusters Overview</a>, and <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke">Ray on GKE</a> for official documentation.</d-footnote>
@@ -195,9 +197,9 @@ kubectl ray version
 
 ---
 
-## Deploy a GPU-Enabled RayCluster
+## Deploy a GPU-Enabled RayCluster<d-cite key="raycluster_configuration"></d-cite>
 
-<aside><p><strong>Docs:</strong> <a href="https://docs.ray.io/en/latest/cluster/kubernetes/getting-started.html">Getting Started with KubeRay</a> · <a href="https://docs.ray.io/en/latest/cluster/kubernetes/user-guides/config.html">RayCluster Configuration</a></p></aside>
+<aside><p><strong>Docs:</strong> <a href="https://docs.ray.io/en/latest/cluster/kubernetes/getting-started.html">Getting Started with KubeRay</a></p></aside>
 
 ```bash
 kubectl apply -f raycluster-gpu.yaml
@@ -242,9 +244,7 @@ kubectl exec -it $HEAD_POD -- bash
 
 ---
 
-## Expose Ray Dashboard (Port 8265) via GKE Ingress
-
-<aside><p><strong>Reference:</strong> <a href="https://docs.ray.io/en/latest/cluster/kubernetes/k8s-ecosystem/ingress.html#gke-ingress-support">GKE Ingress support</a></p></aside>
+## Expose Ray Dashboard (Port 8265) via GKE Ingress<d-cite key="ray-gke-ingress-support"></d-cite>
 
 GKE supports `gce` (external) and `gce-internal` ingress modes. For `gce-internal`, you must create a <a href="https://cloud.google.com/load-balancing/docs/proxy-only-subnets#proxy_only_subnet_create">Proxy-Only subnet</a>.
 
@@ -261,7 +261,9 @@ After a few minutes, GKE assigns an external IP.
 Visit:
 
 ```
+
 http://<EXTERNAL_IP>
+
 ```
 
 ---
