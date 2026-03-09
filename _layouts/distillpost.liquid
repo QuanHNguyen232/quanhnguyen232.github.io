@@ -1,5 +1,9 @@
 <!doctype html>
 <html>
+  {% assign toc_sidebar = false %}
+  {% if page.toc and page.toc.sidebar %}
+    {% assign toc_sidebar = true %}
+  {% endif %}
   <head>
     {% include head.liquid %}
 
@@ -12,7 +16,7 @@
         {{ page._styles }}
       </style>
     {% endif %}
-    {% if page.toc and page.toc.sidebar %}
+    {% if toc_sidebar %}
       <!-- Override Distill grid to match post layout -->
       <style type="text/css">
         .distillpost .post.distill {
@@ -75,13 +79,13 @@
     {% include header.liquid %}
 
     <!-- Content -->
-    <div class="container mt-5{% if page.toc and page.toc.sidebar %} distillpost{% endif %}" role="main">
-    {% if page.toc and page.toc.sidebar %}
+    <div class="container mt-5{% if toc_sidebar %} distillpost{% endif %}" role="main">
+    {% if toc_sidebar %}
       <div class="row">
         {% if page.toc.sidebar == 'left' %}
-        <div class="col-sm-3">
-          <nav id="toc-sidebar" class="sticky-top"></nav>
-        </div>
+          <div class="col-sm-3">
+            <nav id="toc-sidebar" class="sticky-top"></nav>
+          </div>
         {% endif %}
         <div class="col-sm-9">
     {% endif %}
@@ -133,6 +137,7 @@
 
       <d-article>
         {% unless page.toc.sidebar %}
+        {% comment %} In-article TOC when sidebar TOC is not used {% endcomment %}
         {% if page.toc and page.toc.size > 0 %}
           <d-contents>
             <nav class="l-text figcaption">
@@ -167,13 +172,31 @@
         {{ content }}
       </d-article>
 
-      <d-appendix>
-        <d-footnote-list></d-footnote-list>
-        <d-citation-list></d-citation-list>
-      </d-appendix>
+      {% assign has_refs = false %}
+      {% if content contains 'd-cite' or content contains 'd-footnote' or page.bibliography %}
+        {% assign has_refs = true %}
+      {% endif %}
+      {% if has_refs %}
+        <br>
+        <hr>
+        <br>
+        <h2 class="text-3xl font-semibold mb-4 mt-12">Citations</h2>
+        <d-appendix>
+          <d-footnote-list></d-footnote-list>
+          <d-citation-list></d-citation-list>
+        </d-appendix>
+        
+        {% if page.bibliography %}
+          <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
+        {% endif %}
+        
+      {% endif %}
 
-      <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
+      {% if page.citation %}
+        {% include citation.liquid %}
+      {% endif %}
 
+      {% comment %} Related posts and comments (second d-article per Distill convention) {% endcomment %}
       <d-article>
         {% if site.related_blog_posts and site.related_blog_posts.enabled %}
           {% if page.related_posts == null or page.related_posts %}
@@ -188,12 +211,12 @@
         {% endif %}
       </d-article>
     </div>
-    {% if page.toc and page.toc.sidebar %}
+    {% if toc_sidebar %}
         </div>
         {% if page.toc.sidebar == 'right' %}
-        <div class="col-sm-3">
-          <nav id="toc-sidebar" class="sticky-top"></nav>
-        </div>
+          <div class="col-sm-3">
+            <nav id="toc-sidebar" class="sticky-top"></nav>
+          </div>
         {% endif %}
       </div>
     {% endif %}
