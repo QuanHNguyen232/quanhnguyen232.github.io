@@ -4,6 +4,12 @@
   {% if page.toc and page.toc.sidebar %}
     {% assign toc_sidebar = true %}
   {% endif %}
+
+  {% assign year = page.date | date: '%Y' %}
+  {% assign tags = page.tags | join: '' %}
+  {% assign categories = page.categories | join: '' %}
+  {% assign url_beginning = page.url | slice: 0, 6 %}
+
   <head>
     {% include head.liquid %}
 
@@ -39,38 +45,38 @@
   <d-front-matter>
     <script async type="text/json">
       {
-            "title": "{{ page.title }}",
-            "description": "{{ page.description }}",
-            "published": "{{ page.date | date: '%B %d, %Y' }}",
-            "authors": [
-              {% for author in page.authors %}
-              {
-                "author": "{{ author.name }}",
-                "authorURL": "{{ author.url }}",
-                "affiliations": [
-                  {
-                    "name": "{{ author.affiliations.name }}",
-                    "url": "{{ author.affiliations.url }}"
-                  }
-                ]
-              }{% if forloop.last == false %},{% endif %}
-              {% endfor %}
-            ],
-            "katex": {
-              "delimiters": [
+        "title": "{{ page.title }}",
+        "description": "{{ page.description }}",
+        "published": "{{ page.date | date: '%B %d, %Y' }}",
+        "authors": [
+          {% for author in page.authors %}
+            {
+              "author": "{{ author.name }}",
+              "authorURL": "{{ author.url }}",
+              "affiliations": [
                 {
-                  "left": "$",
-                  "right": "$",
-                  "display": false
-                },
-                {
-                  "left": "$$",
-                  "right": "$$",
-                  "display": true
+                  "name": "{{ author.affiliations.name }}",
+                  "url": "{{ author.affiliations.url }}"
                 }
               ]
+            }{% if forloop.last == false %},{% endif %}
+          {% endfor %}
+        ],
+        "katex": {
+          "delimiters": [
+            {
+              "left": "$",
+              "right": "$",
+              "display": false
+            },
+            {
+              "left": "$$",
+              "right": "$$",
+              "display": true
             }
-          }
+          ]
+        }
+      }
     </script>
   </d-front-matter>
 
@@ -80,146 +86,142 @@
 
     <!-- Content -->
     <div class="container mt-5{% if toc_sidebar %} distillpost{% endif %}" role="main">
-    {% if toc_sidebar %}
-      <div class="row">
-        {% if page.toc.sidebar == 'left' %}
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
+      {% if toc_sidebar %}
+        <div class="row">
+          {% if page.toc.sidebar == 'left' %}
+            <div class="col-sm-3">
+              <nav id="toc-sidebar" class="sticky-top"></nav>
+            </div>
+          {% endif %}
+          <div class="col-sm-9">
+      {% endif %}
+
+      <div class="post distill">
+        <d-title>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
+        </d-title>
+        {% if page.authors %}
+          <d-byline></d-byline>
         {% endif %}
-        <div class="col-sm-9">
-    {% endif %}
-    <div class="post distill">
-      {% assign year = page.date | date: '%Y' %}
-      {% assign tags = page.tags | join: '' %}
-      {% assign categories = page.categories | join: '' %}
-      {% assign url_beginning = page.url | slice: 0, 6 %}
 
-      <d-title>
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
-      </d-title>
-      {% if page.authors %}
-        <d-byline></d-byline>
-      {% endif %}
+        {% if tags != '' or categories != '' %}
+          <p class="post-tags" style="margin-top: 0.5rem; margin-bottom: 1rem;">
+            {% if url_beginning == '/blog/' %}
+              <a href="{{ year | prepend: '/blog/' | relative_url }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
+            {% else %}
+              <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
+            {% endif %}
 
-      {% if tags != '' or categories != '' %}
-        <p class="post-tags" style="margin-top: 0.5rem; margin-bottom: 1rem;">
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ year | prepend: '/blog/' | relative_url }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
-          {% else %}
-            <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-          {% endif %}
-          {% if tags != '' %}
-            &nbsp; &middot; &nbsp;
-            {% for tag in page.tags %}
-              {% if url_beginning == '/blog/' %}
-                <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% else %}
-                <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-              {% endif %}
-              {% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-          {% endif %}
-          {% if categories != '' %}
-            &nbsp; &middot; &nbsp;
-            {% for category in page.categories %}
-              {% if url_beginning == '/blog/' %}
-                <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-              {% else %}
-                <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-              {% endif %}
-              {% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-          {% endif %}
-        </p>
-      {% endif %}
-
-      <d-article>
-        {% unless page.toc.sidebar %}
-        {% comment %} In-article TOC when sidebar TOC is not used {% endcomment %}
-        {% if page.toc and page.toc.size > 0 %}
-          <d-contents>
-            <nav class="l-text figcaption">
-              <h3>Contents</h3>
-              {% for section in page.toc %}
-                <div>
-                  <a href="#{{ section.name | slugify }}">{{ section.name }}</a>
-                </div>
-                {% if section.subsections %}
-                  <ul>
-                    {% for subsection in section.subsections %}
-                      <li>
-                        <a href="#{{ subsection.name | slugify }}">{{ subsection.name }}</a>
-                      </li>
-                    {% endfor %}
-                  </ul>
+            {% if tags != '' %}
+              &nbsp; &middot; &nbsp;
+              {% for tag in page.tags %}
+                {% if url_beginning == '/blog/' %}
+                  <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+                {% else %}
+                  <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
                 {% endif %}
+                {% unless forloop.last %}&nbsp;{% endunless %}
               {% endfor %}
-            </nav>
-          </d-contents>
+            {% endif %}
 
-        {% elsif page.toc == true %}
-          <d-contents>
-            <nav class="l-text figcaption">
-              <h3>Contents</h3>
-              {% toc %}
-            </nav>
-          </d-contents>
+            {% if categories != '' %}
+              &nbsp; &middot; &nbsp;
+              {% for category in page.categories %}
+                {% if url_beginning == '/blog/' %}
+                  <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+                {% else %}
+                  <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+                {% endif %}
+                {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}
+            {% endif %}
+          </p>
         {% endif %}
-        {% endunless %}
 
-        {{ content }}
-      </d-article>
+        <d-article>
+          {% unless toc_sidebar %}
+            {% if page.toc and page.toc.size > 0 %}
+              <d-contents>
+                <nav class="l-text figcaption">
+                  <h3>Contents</h3>
+                  {% for section in page.toc %}
+                    <div>
+                      <a href="#{{ section.name | slugify }}">{{ section.name }}</a>
+                    </div>
+                    {% if section.subsections %}
+                      <ul>
+                        {% for subsection in section.subsections %}
+                          <li>
+                            <a href="#{{ subsection.name | slugify }}">{{ subsection.name }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  {% endfor %}
+                </nav>
+              </d-contents>
+              
+            {% elsif page.toc == true %}
+              <d-contents>
+                <nav class="l-text figcaption">
+                  <h3>Contents</h3>
+                  {% toc %}
+                </nav>
+              </d-contents>
+            {% endif %}
+          {% endunless %}
 
-      {% assign has_refs = false %}
-      {% if content contains 'd-cite' or content contains 'd-footnote' or page.bibliography %}
-        {% assign has_refs = true %}
-      {% endif %}
-      {% if has_refs %}
-        <br>
-        <hr>
-        <br>
-        <h2 class="text-3xl font-semibold mb-4 mt-12">Citations</h2>
-        <d-appendix>
-          <d-footnote-list></d-footnote-list>
-          <d-citation-list></d-citation-list>
-        </d-appendix>
-        
-        {% if page.bibliography %}
-          <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
+          {{ content }}
+        </d-article>
+
+        {% assign has_refs = false %}
+        {% if content contains 'd-cite' or content contains 'd-footnote' or page.bibliography %}
+          {% assign has_refs = true %}
         {% endif %}
-        
-      {% endif %}
+        {% if has_refs %}
+          <br>
+          <hr>
+          <br>
+          <h2 class="text-3xl font-semibold mb-4 mt-12">Citations</h2>
+          <d-appendix>
+            <d-footnote-list></d-footnote-list>
+            <d-citation-list></d-citation-list>
+          </d-appendix>
 
-      {% if page.citation %}
-        {% include citation.liquid %}
-      {% endif %}
-
-      {% comment %} Related posts and comments (second d-article per Distill convention) {% endcomment %}
-      <d-article>
-        {% if site.related_blog_posts and site.related_blog_posts.enabled %}
-          {% if page.related_posts == null or page.related_posts %}
-            {% include related_posts.liquid %}
+          {% if page.bibliography %}
+            <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
           {% endif %}
         {% endif %}
-        <br>
-        <br>
-        {% if site.disqus_shortname and page.disqus_comments %}{% include disqus.liquid %}{% endif %}
-        {% if site.giscus.repo and page.giscus_comments %}
-          {% include giscus.liquid %}
+
+        {% if page.citation %}
+          {% include citation.liquid %}
         {% endif %}
-      </d-article>
-    </div>
-    {% if toc_sidebar %}
-        </div>
-        {% if page.toc.sidebar == 'right' %}
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
-        {% endif %}
+
+        <d-article>
+          {% if site.related_blog_posts and site.related_blog_posts.enabled %}
+            {% if page.related_posts == null or page.related_posts %}
+              {% include related_posts.liquid %}
+            {% endif %}
+          {% endif %}
+          <br>
+          <br>
+          {% if site.disqus_shortname and page.disqus_comments %}{% include disqus.liquid %}{% endif %}
+          {% if site.giscus.repo and page.giscus_comments %}
+            {% include giscus.liquid %}
+          {% endif %}
+        </d-article>
       </div>
-    {% endif %}
+
+      {% if toc_sidebar %}
+          </div>
+          {% if page.toc.sidebar == 'right' %}
+            <div class="col-sm-3">
+              <nav id="toc-sidebar" class="sticky-top"></nav>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
 
     <!-- Footer -->
