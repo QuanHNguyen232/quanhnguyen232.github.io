@@ -32,4 +32,13 @@ footer.sticky-bottom {
   .container {
     text-align: center;
   }
+
+  a {
+    color: var(--global-theme-color);
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: none;
+    }
+  }
 }
