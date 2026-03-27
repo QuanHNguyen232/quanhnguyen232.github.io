@@ -16,13 +16,32 @@ stars: 5
 goodreads_review: 
 status: reading # options: abandoned,finished,interested,paused,queued,reading,reread
 ---
+Access free via [Github dev branch](https://github.com/harvard-edge/cs249r_book) or on web [mlsysbook.ai](https://mlsysbook.ai/).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin eros sit amet ante aliquet, sit amet vulputate lectus mattis. Aenean ullamcorper pretium nunc, sed egestas lorem elementum id. Nulla id mi id neque ultrices egestas ut in urna. Sed ac ultricies nunc. Nam convallis placerat urna id egestas. Nulla porta, est interdum vestibulum venenatis, lorem odio laoreet sapien, in pulvinar tellus eros a dolor. Vivamus sapien justo, ullamcorper a mi eget, scelerisque euismod nunc. In augue augue, ultrices a ornare non, tincidunt quis justo. Donec sit amet consectetur eros. Nullam neque leo, tincidunt id ipsum ac, volutpat lobortis mi. Phasellus consequat ultricies arcu, eu semper ligula ultrices eget. Ut in fringilla elit, ac tincidunt nisi.
+## Abstract
+Machine Learning Systems provides a systematic framework for understanding and engineering machine learning (ML) systems. This textbook bridges the gap between theoretical foundations and practical engineering, emphasizing the systems perspective required to build effective AI solutions. Unlike resources that focus primarily on algorithms and model architectures, this book highlights the broader context in which ML systems operate, including data engineering, model optimization, hardware-aware training, and inference acceleration. Readers will develop the ability to reason about ML system architectures and apply enduring engineering principles for building flexible, efficient, and robust machine learning systems.
 
-Nunc commodo elit nec turpis feugiat consectetur. Nullam in nisi egestas, fermentum ligula hendrerit, euismod enim. Nulla eu hendrerit eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et velit ante. Vestibulum pretium vitae quam et sagittis. Proin eu nunc vel velit accumsan eleifend. Nulla facilisis, diam tempus imperdiet ultrices, massa ipsum consequat orci, sed efficitur eros mi a felis. Cras lobortis turpis sem, sed lobortis nunc ullamcorper tristique. Nam vehicula rhoncus ante, in faucibus sapien scelerisque et. Donec semper libero et tincidunt mattis. In vestibulum, nulla pretium dictum commodo, risus nulla vestibulum felis, at tincidunt massa mi in odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+## What You Will Learn
+This textbook teaches you to think at the intersection of machine learning and systems engineering. Each chapter bridges algorithmic concepts with the infrastructure that makes them work in practice.
 
-Donec efficitur ultrices purus sit amet imperdiet. Nam consequat metus in erat sodales faucibus. Aliquam maximus fermentum nulla id finibus. Aliquam iaculis sed odio vel rutrum. Curabitur sed odio est. Praesent nec sollicitudin tortor. Praesent pharetra, turpis quis porttitor rhoncus, ante massa fringilla lacus, nec porttitor magna turpis vitae felis. Nullam tristique massa id odio imperdiet, nec sodales massa egestas. Proin nisi metus, euismod sed accumsan vitae, facilisis vel risus. Morbi suscipit auctor erat, nec viverra elit fringilla eu. Mauris congue, purus id tristique facilisis, felis nisi efficitur magna, eu consectetur augue sem vitae lacus. Aliquam erat volutpat. Cras at nibh ultricies, volutpat arcu vitae, dictum est. In ac dolor sagittis, egestas lectus et, semper nisl. Etiam consectetur purus vitae sapien porttitor auctor.
+| You know... | | You will learn... |
+|-------------|-|-------------------|
+| How to train a model | → | How training scales across GPU clusters |
+| That quantization shrinks models | → | How INT8 math maps to silicon |
+| What a transformer is | → | Why KV-cache dominates memory at inference |
+| Models run on GPUs | → | How schedulers balance latency vs throughput |
+| Edge devices have limits | → | How to co-design models and hardware |
 
-Nulla sit amet venenatis odio. Suspendisse ac lacus quis augue mollis tempus vel in lorem. Donec augue turpis, eleifend nec nibh eu, elementum dictum metus. Proin ut est ligula. Etiam vehicula facilisis metus, sit amet consectetur risus ullamcorper porttitor. In congue nibh quis sollicitudin iaculis. Donec a mollis lorem, non mollis lacus. Nulla et leo ex. Aliquam erat volutpat. Nam sit amet tincidunt mauris. Vivamus vitae est sit amet nisi semper egestas. Donec in diam pharetra, commodo diam vitae, imperdiet ligula. Cras iaculis ac diam eget vehicula. Proin suscipit ante enim, quis vehicula mi porta bibendum. Aliquam a diam porttitor, sollicitudin justo vitae, tempor odio.
+### Book Structure
+The textbook follows the Hennessy & Patterson pedagogical model across two volumes:
 
-Cras fermentum dignissim pretium. Donec quis turpis eu neque lacinia facilisis in sit amet nibh. Nulla non tortor ultricies, euismod est in, blandit nibh. Ut a neque metus. Sed convallis condimentum nibh quis finibus. Praesent aliquam sem iaculis eros maximus accumsan. Nulla venenatis mauris id aliquet maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at enim vitae ex porttitor vestibulum sed eget nibh. Suspendisse accumsan feugiat quam eget ultricies.
+| | Volume | Theme | Scope |
+|-|--------|-------|-------|
+|📗| Volume I | Build, Optimize, Deploy | Single-machine ML systems (1–8 GPUs). Foundations, optimization, and deployment on one node. |
+|📘| Volume II | Scale, Distribute, Govern | Distributed systems at production scale. Multi-machine infrastructure, fault tolerance, and governance. |
+
+## Quick Start
+1. Read the textbook. Start with the current edition. It's the foundation for everything else.
+1. Pick a hands-on path. Build a framework (TinyTorch), explore trade-offs (Labs), or deploy to real hardware (Kits).
+1. Test yourself. Drill the interview playbook: 1,000+ systems design questions across cloud, edge, mobile, and TinyML.
+1. Teach it. Adopt the curriculum with the AI Engineering Blueprint and lecture slides.
