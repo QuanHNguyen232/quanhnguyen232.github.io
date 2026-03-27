@@ -4,27 +4,27 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "About",
+    title: "about",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-blog",
-          title: "Blog",
+          title: "blog",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
         },{id: "nav-repositories",
-          title: "Repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          title: "repositories",
+          description: "Repositories status",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
-          title: "CV",
+          title: "cv",
           description: "This is my CV.",
           section: "Navigation",
           handler: () => {
@@ -51,15 +51,26 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/photos/";
               },
-            },{id: "post-brief-of-ml-coding-interview-questions-leetcode-style",
+            },{id: "post-brief-of-ai-ml-coding-interview-questions-leetcode-style",
         
-          title: "Brief of ML coding interview questions (Leetcode style)",
+          title: "Brief of AI/ML coding interview questions (Leetcode style)",
         
-        description: "Some examples for ML coding interview",
+        description: "Some implementation examples for machine learning coding interview",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2026/leetcode-ml/";
+          
+        },
+      },{id: "post-brief-of-cuda-gpu-coding-interview-questions-leetcode-style",
+        
+          title: "Brief of CUDA/GPU coding interview questions (Leetcode style)",
+        
+        description: "Some examples for CUDA/GPU coding interview, this is needed for ML optimization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/leetcode-gpu/";
           
         },
       },{id: "post-brief-of-data-structure-amp-algorithm-coding-interview-questions",
@@ -115,16 +126,54 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/ml_sys_design_interview/";
+            },},{id: "books-inference-engineering",
+          title: 'Inference Engineering',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/inference_engineering/";
+            },},{id: "news-i-start-my-internship-at-adobe-sparkles-smile",
+          title: 'I start my internship at Adobe! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-i-39-m-joining-google-youtube",
+          title: 'I&amp;#39;m joining Google (Youtube)',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2026-newgrad/";
+            },},{id: "photos-london-2022",
+          title: 'London 2022',
+          description: "Afternoon tea and Oxford Street in London.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_2022_london/";
+            },},{id: "photos-gettysburg",
+          title: 'Gettysburg',
+          description: "Winter adventures, snowboarding, and campus life at Gettysburg.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_2023_gburg/";
             },},{id: "photos-saigon-2024",
           title: 'Saigon 2024',
           description: "Cà phê, vỏ chai, and street life in Saigon.",
           section: "Photos",handler: () => {
-              window.location.href = "/photos/photo_11/";
+              window.location.href = "/photos/photo_2024_saigon/";
+            },},{id: "photos-my-2024",
+          title: 'My 2024',
+          description: "A snapshot of the year.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_2024_lookback/";
             },},{id: "photos-philly-2024-25",
           title: 'Philly 2024–25',
           description: "Matcha, SHPE BBQ, and fun in Philadelphia.",
           section: "Photos",handler: () => {
-              window.location.href = "/photos/photo_10/";
+              window.location.href = "/photos/photo_2025_philly/";
+            },},{id: "photos-nyc-2025",
+          title: 'NYC 2025',
+          description: "New York bagels and pizza.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_2025_newyork/";
+            },},{id: "photos-adobe-amp-west-coast",
+          title: 'Adobe &amp;amp; West Coast',
+          description: "Office life, San Jose, and Seattle July 4th.",
+          section: "Photos",handler: () => {
+              window.location.href = "/photos/photo_2025_summer/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
