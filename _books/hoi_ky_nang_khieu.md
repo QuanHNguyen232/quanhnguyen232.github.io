@@ -17,6 +17,8 @@ goodreads_review:
 status: reread # options: abandoned,finished,interested,paused,queued,reading,reread
 ---
 
+Read below (recommend using web browser)
+
 One of the best books about my high school: Phổ Thông Năng Khiếu (VNU-HCM High School for the Gifted) back in Vietnam. This book captures so many small but unforgettable moments of student life at Năng Khiếu: the teachers, the traditions, the jokes only NK students understand, and the culture that makes the school so special.
 
 Reading it brought back a lot of memories from my own years there. It reminds me how unique the experience was  the intense academic environment, the legendary teachers, the inside jokes between generations of students, and the strange but beautiful chaos that somehow defines Năng Khiếu.
@@ -32,6 +34,5 @@ School's LinkedIn: [linkedin.com/school/vnuhcmhgs](https://www.linkedin.com/scho
 <iframe
   src="{{ '/assets/pdf/books/Hoi-Ky-Nang-Khieu.pdf#toolbar=0' | relative_url }}"
   width="90%"
-  height="750px"
-  style="border: none;"
+  height="600px"
 ></iframe>
