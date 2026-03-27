@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-repositories",
+          title: "Repositories",
+          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "This is my CV.",
@@ -93,11 +100,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/hoi_ky_nang_khieu/";
-            },},{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
             },},{id: "books-designing-data-intensive-applications",
           title: 'Designing Data-Intensive Applications',
           description: "",
@@ -113,44 +115,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/ml_sys_design_interview/";
-            },},{id: "news-i-start-my-internship-at-adobe-sparkles-smile",
-          title: 'I start my internship at Adobe! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "photos-london-2022",
-          title: 'London 2022',
-          description: "Afternoon tea and Oxford Street in London.",
-          section: "Photos",handler: () => {
-              window.location.href = "/photos/photo_7/";
-            },},{id: "photos-gettysburg",
-          title: 'Gettysburg',
-          description: "Winter adventures, snowboarding, and campus life at Gettysburg.",
-          section: "Photos",handler: () => {
-              window.location.href = "/photos/photo_6/";
             },},{id: "photos-saigon-2024",
           title: 'Saigon 2024',
           description: "Cà phê, vỏ chai, and street life in Saigon.",
           section: "Photos",handler: () => {
               window.location.href = "/photos/photo_11/";
-            },},{id: "photos-my-2024",
-          title: 'My 2024',
-          description: "A snapshot of the year.",
-          section: "Photos",handler: () => {
-              window.location.href = "/photos/photo_8/";
             },},{id: "photos-philly-2024-25",
           title: 'Philly 2024–25',
           description: "Matcha, SHPE BBQ, and fun in Philadelphia.",
           section: "Photos",handler: () => {
               window.location.href = "/photos/photo_10/";
-            },},{id: "photos-nyc-2025",
-          title: 'NYC 2025',
-          description: "New York bagels and pizza.",
-          section: "Photos",handler: () => {
-              window.location.href = "/photos/photo_9/";
-            },},{id: "photos-adobe-amp-west-coast",
-          title: 'Adobe &amp;amp; West Coast',
-          description: "Office life, San Jose, and Seattle July 4th.",
-          section: "Photos",handler: () => {
-              window.location.href = "/photos/photo_5/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
