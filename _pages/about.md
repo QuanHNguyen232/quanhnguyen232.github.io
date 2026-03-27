@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /
 subtitle: ":four_leaf_clover: Dreams come true :four_leaf_clover:" # Address. Contacts. Motto. Etc.
 
@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Func fact: I love <a href="https://www.chichasanchen.com/en/" target="_blank">Chi Cha San Chen</a> and <a href="https://www.heytea.com/" target="_blank">Hey Tea</a></p>
+    <p>Func fact: I love <a href="https://www.heytea.com/" target="_blank">HeyTea</a></p> and <a href="https://www.chichasanchen.com/en/" target="_blank">Chicha San Chen</a>
 
 selected_papers: true # includes a list of papers marked as "selected={true}" in /_bibliography/papers.bib
 social: true # includes social icons at the bottom of the page
@@ -49,5 +49,8 @@ Tasks include:
 Furthermore, I have research experience, including publications at AAAI, as well as research conducted at Purdue University and MSU.
 
 Meanwhile, I'd love to keep an open mind to explore other related paths as well.
+
+<img src="{{ '/assets/img/favicon/bugcat-capoo.webp' | relative_url }}" alt="Bugcat Capoo" style="float: left; max-width: 50px; margin: 0 1rem 0.5rem 0;" />
+
 
 <!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->

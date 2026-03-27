@@ -1,8 +1,8 @@
 ---
 layout: distillpost
-title: Brief of ML coding interview questions (Leetcode style)
+title: Brief of AI/ML coding interview questions (Leetcode style)
 date: 2026-03-08
-description: Some examples for ML coding interview
+description: Some implementation examples for machine learning coding interview
 tags: coding interview
 categories: machine-learning
 featured: false
@@ -21,9 +21,9 @@ authors:
 ---
 
 Practice platforms
-1. [tensortonic.com](https://www.tensortonic.com/)
+1. [tensortonic.com](https://www.tensortonic.com/): auto push to github
 1. [deep-ml.com](https://www.deep-ml.com/)
-
+1. [Github:TorchCode](https://github.com/duoan/TorchCode): provide advanced implementation (i.e: topK/topP sampling, KV Cache/Flash/Grouped Query/Multi-Head/etc. Attention, Speculative Decoding, RL loss)
 More of my implementations can be found here: [Github: QuanHNguyen232/TensorTonic-Solutions](https://github.com/QuanHNguyen232/TensorTonic-Solutions)
 
 ## Backprop

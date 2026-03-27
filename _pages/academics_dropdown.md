@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Academics
+title: academics
 nav: true
 nav_order: 60
 dropdown: true

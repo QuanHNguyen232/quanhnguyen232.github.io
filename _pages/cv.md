@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: cv
 nav: true
 nav_order: 50
 cv_pdf: /assets/rendercv/rendercv_output/Quan_Nguyen_CV.pdf # you can also use external links here

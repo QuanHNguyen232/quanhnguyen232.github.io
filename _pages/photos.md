@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Photos
+title: photos
 permalink: /photos/
 description: A growing collection of photos by category.
 nav: false
