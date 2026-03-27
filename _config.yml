@@ -9,10 +9,12 @@ last_name: Nguyen
 contact_note: >
   Feel free to contact me via email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  A machine learning engineer, software engineer that interested in AI/ML. My experience spans across LLM post-train, fine-tuning, LLM inference, Recommendation System, Ranking, Retrieval, MLOps.
+  I work Google (YouTube) in , previously at Adobe, Venera AI, contributed to vLLM.
+  I locate in San Francisco, Bay Area, US.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: machine-learning, software, engineer, Google, YouTube, Adobe, vLLM, LLM, post-train, fine-tune, inference, recommendation system, mlops, jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon/bugcat.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/{path-to-image})
 
@@ -31,15 +33,15 @@ repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/b
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+  theme_light: transparent # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: react # https://github.com/ryo-ma/github-profile-trophy
 
 # External service URLs for repository page
 # To use a different instance or service for displaying GitHub stats and trophies,
 # update these URLs. These are used in the repository templates.
 external_services:
   github_readme_stats_url: https://github-readme-stats.vercel.app
-  github_profile_trophy_url: https://github-profile-trophy.vercel.app
+  github_profile_trophy_url: https://github-profile-summary-cards.vercel.app/api/cards/profile-details #https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -66,8 +68,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+# see https://github.com/alshedivat/al-folio/blob/main/SEO.md for SEO Best Practices Guide
+serve_og_meta: false # Include Open Graph meta tags in the HTML head.
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -207,44 +210,16 @@ exclude:
   - readme_preview/
   - vendor
   - _pages/projects.md # does not add at the moment
-  - _pages/repositories.md # does not add at the moment
-  - _photos/photo_1.md
-  - _photos/photo_2.md
-  - _photos/photo_3.md
-  - _photos/photo_4.md
-  - _news/announcement_1.md
-  - _news/announcement_2.md
-  - _posts/2015-03-15-formatting-and-links.md
-  - _posts/2015-05-15-images.md
-  - _posts/2015-07-15-code.md
-  - _posts/2015-10-20-disqus-comments.md
-  - _posts/2015-10-20-math.md
-  - _posts/2018-12-22-distill.md
-  - _posts/2020-09-28-twitter.md
-  - _posts/2021-07-04-diagrams.md
-  - _posts/2022-02-01-redirect.md
-  - _posts/2022-12-10-giscus-comments.md
-  - _posts/2023-03-20-table-of-contents.md
-  - _posts/2023-03-21-tables.md
-  - _posts/2023-04-24-videos.md
-  - _posts/2023-04-25-audios.md
-  - _posts/2023-04-25-sidebar-table-of-contents.md
-  - _posts/2023-05-12-custom-blockquotes.md
-  - _posts/2023-07-04-jupyter-notebook.md
-  - _posts/2023-07-12-post-bibliography.md
-  - _posts/2023-12-12-tikzjax.md
-  - _posts/2024-01-26-chartjs.md
-  - _posts/2024-01-26-echarts.md
-  - _posts/2024-01-26-geojson-map.md
-  - _posts/2024-01-27-advanced-images.md
-  - _posts/2024-01-27-code-diff.md
-  - _posts/2024-01-27-vega-lite.md
-  - _posts/2024-04-15-pseudocode.md
-  - _posts/2024-04-28-post-citation.md
-  - _posts/2024-04-29-typograms.md
-  - _posts/2024-05-01-tabs.md
-  - _posts/2024-12-04-photo-gallery.md
-  - _posts/2025-03-26-plotly.md
+  - _books/the_godfather.md
+  - _photos/photo_?.md
+  - _news/announcement_?.md
+  - _posts/201*.md
+  - _posts/2020-*.md
+  - _posts/2021-*.md
+  - _posts/2022-*.md
+  - _posts/2023-*.md
+  - _posts/2024-*.md
+  - _posts/2025-*.md
 keep_files:
   - CNAME
   - .nojekyll
