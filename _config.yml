@@ -2,19 +2,19 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Quan Nguyen # the website title (if "blank", full name will be used instead)
 first_name: Quan
 middle_name: H.
 last_name: Nguyen
 contact_note: >
   Feel free to contact me via email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A machine learning engineer, software engineer that interested in AI/ML. My experience spans across LLM post-train, fine-tuning, LLM inference, Recommendation System, Ranking, Retrieval, MLOps.
-  I work Google (YouTube) in , previously at Adobe, Venera AI, contributed to vLLM.
-  I locate in San Francisco, Bay Area, US.
+  A machine learning engineer, software engineer that interested in AI/ML. My experience spans across LLM post-train, fine-tuning, LLM inference, Recommendation System, Ranking, Retrieval, ML Operations.
+  I work Google (YouTube) in San Bruno; previously interned at Adobe, Venera AI, contributed to vLLM. I did research at Purdue University and Michigan State University (MSU). Had an AAAI paper.
+  I locate in San Francisco, CA, US (Bay Area).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: machine-learning, software, engineer, Google, YouTube, Adobe, vLLM, LLM, post-train, fine-tune, inference, recommendation system, mlops, jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: machine learning, MLE, software engineer, SWE, Google, YouTube, Adobe, vLLM, Transformer, LLM, post-train, fine-tune, inference, recommendation, mlops, University of Maryland, UMD, Gettysburg College, quan nguyen #, jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon/bugcat.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/{path-to-image})
 

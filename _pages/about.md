@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Func fact: I love <a href="https://www.heytea.com/" target="_blank">HeyTea</a></p> and <a href="https://www.chichasanchen.com/en/" target="_blank">Chicha San Chen</a>
+    <p>Func fact: I love <a href="https://www.heytea.com/" target="_blank">HeyTea</a> and <a href="https://www.chichasanchen.com/en/" target="_blank">Chicha San Chen</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}" in /_bibliography/papers.bib
 social: true # includes social icons at the bottom of the page
