@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://quanhnguyen232.github.io/sitemap.xml
+Sitemap: https://quanhn232.github.io/sitemap.xml

@@ -234,7 +234,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%71%75%61%6E%68%6E%67%75%79%65%6E%32%33%32@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%71%75%61%6E%68%6E%32%33%32@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-scholar',
@@ -248,14 +248,14 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/quanhnguyen232", "_blank");
+          window.open("https://www.linkedin.com/in/quanhn232", "_blank");
         },
       },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/QuanHNguyen232", "_blank");
+          window.open("https://github.com/quanhn232", "_blank");
         },
       },{
       id: 'light-theme',

@@ -1,4 +1,4 @@
-Below is a **complete, copy/paste command playbook** to keep your fork (`QuanHNguyen232/quanhnguyen232.github.io`) up-to-date with the upstream template (`alshedivat/al-folio`) while still keeping your personal edits.
+Below is a **complete, copy/paste command playbook** to keep your fork (`quanhn232/quanhn232.github.io`) up-to-date with the upstream template (`alshedivat/al-folio`) while still keeping your personal edits.
 
 This workflow is the standard “fork + upstream remote + periodic merges/rebases” approach (you’ll occasionally resolve merge conflicts, which is normal). ([GitHub][1])
 
@@ -9,8 +9,8 @@ This workflow is the standard “fork + upstream remote + periodic merges/rebase
 ### Clone _your_ GitHub Pages repo
 
 ```bash
-git clone https://github.com/QuanHNguyen232/quanhnguyen232.github.io.git
-cd quanhnguyen232.github.io
+git clone https://github.com/quanhn232/quanhn232.github.io.git
+cd quanhn232.github.io
 ```
 
 ### Add the template as `upstream`
@@ -131,7 +131,7 @@ That’s it—your site stays current while still deploying from `main`.
 If you use GitHub CLI:
 
 ```bash
-gh repo sync QuanHNguyen232/quanhnguyen232.github.io -b main
+gh repo sync quanhn232/quanhn232.github.io -b main
 ```
 
 This syncs your fork’s `main` with upstream, but I still recommend the “update branch” method above if you want safer conflict handling.
