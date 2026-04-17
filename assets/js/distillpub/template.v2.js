@@ -97,6 +97,15 @@
         console.error("Don't know what to do with published date: " + source.publishedDate);
       }
     }
+    if (source.updatedDate) {
+      if (source.updatedDate instanceof Date) {
+        target.updatedDate = source.updatedDate;
+      } else if (source.updatedDate.constructor === String) {
+        target.updatedDate = new Date(source.updatedDate);
+      } else {
+        console.error("Don't know what to do with updated date: " + source.updatedDate);
+      }
+    }
     target.description = source.description;
     target.authors = source.authors.map((authorObject) => new Author(authorObject));
     target.katex = source.katex;
@@ -2108,6 +2117,15 @@ d-appendix > distill-appendix {
         <p>${frontMatter.publishedMonth} ${frontMatter.publishedDay}, ${frontMatter.publishedYear}</p> `
           : `
         <p><em>Not published yet.</em></p>`
+      }
+    </div>
+    <div>
+      ${
+        frontMatter.updatedDate
+          ? `
+      <h3>Updated</h3>
+      <p>${months[frontMatter.updatedDate.getMonth()]} ${frontMatter.updatedDate.getDate()}, ${frontMatter.updatedDate.getFullYear()}</p>`
+          : ""
       }
     </div>
   </div>
