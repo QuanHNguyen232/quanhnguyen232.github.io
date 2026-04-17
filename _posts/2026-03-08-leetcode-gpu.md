@@ -23,5 +23,6 @@ authors:
 Practice platforms
 1. [leetGPU.com](https://leetgpu.com/) (open source [Github](https://github.com/AlphaGPU/leetgpu-challenges))
 1. [Github:LeetCUDA](https://github.com/xlite-dev/LeetCUDA)
+1. [tensara.org](https://tensara.org/)
 
 Might need to learn from NVIDIA's [CUDA Programming Guide](https://docs.nvidia.com/cuda/cuda-programming-guide/index.html)
