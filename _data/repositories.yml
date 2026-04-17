@@ -1,12 +1,12 @@
 github_users:
-  - quanhnguyen232
+  - quanhn232
   # - alshedivat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - QuanHNguyen232/LeetCode
-  - QuanHNguyen232/TensorTonic-Solutions
+  - quanhn232/LeetCode
+  - quanhn232/TensorTonic-Solutions
   # - alshedivat/al-folio
   # - jekyll/jekyll
   # - twbs/bootstrap
