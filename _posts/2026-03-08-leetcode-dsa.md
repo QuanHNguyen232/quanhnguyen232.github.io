@@ -26,7 +26,7 @@ Practice platforms
 1. [neetcode.io](https://neetcode.io/)
 1. [cp-algorithms.com](https://cp-algorithms.com/)
 
-More of my implementations can be found here: [Github: QuanHNguyen232/LeetCode](https://github.com/QuanHNguyen232/LeetCode)
+More of my implementations can be found here: [Github: quanhn232/LeetCode](https://github.com/quanhn232/LeetCode)
 
 ## DSA coding interview template
 1. REPHRASE the question: in your own words -> make sure you understand the question correctly

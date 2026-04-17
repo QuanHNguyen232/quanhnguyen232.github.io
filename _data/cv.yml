@@ -1,7 +1,7 @@
 cv:
   name: Quan Nguyen
   label: Student
-  email: quanhnguyen232@gmail.com
+  email: quanhn232@gmail.com
   location: College Park, MD
   image: ""
   summary: Machine Learning student at University of Maryland, College Park
@@ -10,9 +10,9 @@ cv:
     # - network: X
     #   username: QuanHNguyen232
     - network: GitHub
-      username: QuanHNguyen232
+      username: quanhn232
     - network: LinkedIn
-      username: QuanHNguyen232
+      username: quanhn232
 
   address:
     street: NA
