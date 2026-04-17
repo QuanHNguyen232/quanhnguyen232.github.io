@@ -73,9 +73,9 @@ ninja.data = [{
             window.location.href = "/blog/2026/leetcode-gpu/";
           
         },
-      },{id: "post-brief-of-data-structure-amp-algorithm-coding-interview-questions",
+      },{id: "post-brief-of-data-structure-amp-algorithm-dsa-coding-interview-questions",
         
-          title: "Brief of Data-Structure &amp; Algorithm coding interview questions",
+          title: "Brief of Data-Structure &amp; Algorithm (DSA) coding interview questions",
         
         description: "Some concepts, topics, and examples for Leetcode coding interview",
         section: "Posts",
