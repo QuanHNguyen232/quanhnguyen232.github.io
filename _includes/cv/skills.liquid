@@ -9,7 +9,10 @@
         <i class="{{ entry.icon }}"></i>
       {% endif %}
       <strong>
-        {{- entry.name -}}
+        {% capture skill_name %}
+          {% if entry.label %}{{ entry.label }}{% elsif entry.name %}{{ entry.name }}{% endif %}
+        {% endcapture %}
+        {{- skill_name -}}
         {%- if entry.level %} ({{ entry.level }}){% endif %}:</strong
       >
       
