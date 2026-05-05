@@ -5,7 +5,7 @@ cv:
   phone: "+17174206671"
   location: San Francisco, CA
   # image: # remove (not support this field in latest RenderCV)
-  # summary: Mach ine Learning Engineer at Google YouTube. # remove (not support this field in latest RenderCV)
+  # summary: Machine Learning Engineer at Google YouTube. # remove (not support this field in latest RenderCV)
 
   social_networks:
     - network: GitHub
@@ -45,7 +45,7 @@ cv:
           - Phi Beta Kappa Society member
           - David Wills Scholarship recipient
 
-    Experience:
+    Experience: # ExperienceEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#experienceentry)
       - company: Google (YouTube)
         position: Software Engineer, Machine Learning
         location: San Bruno, CA
@@ -90,24 +90,24 @@ cv:
           - Implemented distributed ETL with Spark and Airflow to process real-time user-click data.
           - Optimized model serving and data retrieval with Redis, Kafka, and HDFS.
 
-    # Volunteer:
+    # Volunteer: # ExperienceEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#experienceentry)
     #   - company: Viet Career Guide
     #     position: Volunteer
     #     location: San Jose, CA
-    #     start_date: 2025
-    #     end_date: 2025
-    #     summary: Volunteer networking events that helps Vietnamese students and professionals connect with each other.
+    #     start_date: "2025-06"
+    #     end_date: "2025-08"
+    #     summary:
     #     highlights:
     #       - Organized networking events for Vietnamese students and professionals to connect with each other.
 
-    # Awards: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
-    #   - title: ICPC Participant
-    #     authors:
-    #       - "ICPC"
-    #     date: "2022"
-    #     awarder: ICPC
-    #     url: https://icpc.io/
-    #     summary: ICPC is a competitive programming contest for university students.
+    Awards: # PublicationEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#publicationentry)
+      - title: ICPC Participant
+        authors:
+          - "Quan Nguyen"
+        date: "2022"
+        awarder: International Collegiate Programming Contest
+        url: https://icpc.io/
+        summary: ICPC is a competitive programming contest for university students.
 
     Publications: # PublicationEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#publicationentry)
       - title: Predicting Perceived Music Emotions with Respect to Instrument Combinations
@@ -121,43 +121,43 @@ cv:
         summary:
 
     Skills: # OnelineEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#onelineentry)
-      - name: Machine Learning
-        # level: Advanced
-        # icon: fa-solid fa-hashtag # remove (not support this field in latest RenderCV)
+      - label: Machine Learning
         details: "LLM, Recommendation System, ML System, MLOps"
+        # level: Advanced
+        icon: fa-solid fa-hashtag # does not affect RenderCV as long as label and details are provided
 
-      - name: Languages
-        details: Python, SQL, C/C++ (MPI, CUDA, OpenMP)
+      - label: Languages
+        details: Python (PyTorch), SQL, C/C++ (MPI, CUDA, OpenMP)
       
-      - name: ML/AI
-        details: PyTorch, vLLM, Ray, Hugging Face, DeepSpeed, Weights & Biases (W&B), MLflow
+      - label: ML/AI
+        details: Hugging Face, vLLM, Ray, DeepSpeed, Weights & Biases (W&B), MLflow, LangChain
       
-      - name: Big Data
+      - label: Big Data
         details: Airflow, Spark, Kafka, Hadoop, Redis, PostgreSQL
       
-      - name: Cloud
+      - label: Cloud
         details: AWS, Azure, GCP
       
-      - name: MLOps
+      - label: MLOps
         details: Docker, Kubernetes, Helm, Grafana, Prometheus, GitHub Actions, Terraform
       
-    Languages: # OnelineEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#onelineentry)
+    Languages: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
       - name: Vietnamese
         summary: "Native speaker"
 
       - name: English
         summary: "Fluent"
 
-    Interests: # OnelineEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#onelineentry)
+    Interests: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
       - name: Guitar
-        # icon: fa-solid fa-guitar # remove (not support this field in latest RenderCV)
         keywords: "classical"
+        icon: fa-solid fa-guitar # remove (not support this field in latest RenderCV)
 
     Certificates: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
       - name: Fundamentals of MCP
         date: "2025-07"
-        # issuer: Hugging Face
-        # icon: fa-solid fa-location-dot
+        issuer: Hugging Face
+        icon: fa-solid fa-hashtag
 
     Projects: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
       - name: High-Performance Distributed Training (HPC)
