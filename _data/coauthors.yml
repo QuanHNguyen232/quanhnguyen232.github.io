@@ -1,7 +1,7 @@
-"Todd":
-  - firstname: ["Todd", "Todd W.", "Todd W. Neller"]
+"neller": # [last_name] must be lower case
+  - firstname: ["Todd", "Todd W.", "Todd W."]
     url: https://cs.gettysburg.edu/~tneller/
 
-"Viet Dung":
-  - firstname: ["Viet Dung", "Viet Dung Nguyen"]
+"nguyen":
+  - firstname: ["Viet Dung"]
     url: https://vietdung.me/
