@@ -4,61 +4,71 @@ This workflow is the standard “fork + upstream remote + periodic merges/rebase
 
 ---
 
-## 0) One-time setup (local repo + upstream remote)
+## 0) Clone again and set up workspace (repo already has 2 branches)
 
-### Clone _your_ GitHub Pages repo
+Use this when you clone your repo on a new machine.
+
+### Clone your repo and enter folder
 
 ```bash
 git clone https://github.com/quanhn232/quanhn232.github.io.git
 cd quanhn232.github.io
 ```
 
-### Add the template as `upstream`
+### Add upstream (al-folio template) once
 
 ```bash
 git remote add upstream https://github.com/alshedivat/al-folio.git
 git remote -v
 ```
 
-You should see:
+Expected remotes:
 
-- `origin` → your repo
-- `upstream` → alshedivat/al-folio
+- `origin` -> `quanhn232/quanhn232.github.io`
+- `upstream` -> `alshedivat/al-folio`
+
+### Fetch all branches and create local tracking branches
+
+```bash
+git fetch --all --prune
+git switch main
+git pull --ff-only origin main
+git switch --track origin/edit/my-content
+git switch --track origin/update/upstream-sync
+git switch main
+```
+
+Now your local repo has these 3 working branches ready:
+
+- `main`
+- `edit/my-content`
+- `update/upstream-sync`
 
 ---
 
-## 1) Day-to-day: make your personal changes safely (feature branches)
+## 1) Day-to-day workflow (edit branch -> merge to main)
 
-Create a branch for your edits:
-
-```bash
-git checkout main
-git pull --ff-only origin main
-git checkout -b edit/my-content
-```
-
-OR update branch from main
+### Start personal edits on `edit/my-content`
 
 ```bash
-git checkout main
-git pull --ff-only origin main
-git checkout edit/my-content
+git switch edit/my-content
+git pull --ff-only origin edit/my-content
 git merge origin/main
 ```
 
-Edit files, then:
+### Edit files, commit, and push
 
 ```bash
 git status
 git add -A
 git commit -m "Update personal info"
-git push -u origin edit/my-content
+git push origin edit/my-content
 ```
 
-Then merge into main:
+### Merge personal edits into `main`
 
 ```bash
-git checkout main
+git switch main
 git pull --ff-only origin main
 git merge --no-ff edit/my-content
 git push origin main
