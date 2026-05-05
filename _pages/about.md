@@ -22,33 +22,26 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 5 # leave blank to include all the blog posts
+  limit: 3 # leave blank to include all the blog posts
 ---
 
 
-I'm looking for New Grad and Early Career (full-time) starting 5/2026:
+## About Me
+Hi, I'm Quan Nguyen, a Machine Learning Engineer (MLE) based in the San Francisco Bay Area. My work focuses on the intersection of Recommendation Systems (RecSys) and Large Language Model (LLM).
 
-- Machine Learning Engineer (MLE)
-- or Software Engineer (SWE)
-- or Data Scientist (DS)
+Starting in May 2026, I will be joining Google as a Software Engineer on the YouTube Recommendations team, where I'll be working on ranking and recommendation systems to enhance user experience for millions.
 
-I've experience as MLE, focus on
+## My Professional Journey
+My expertise lies in building scalable machine learning pipelines and optimizing distributed systems.
 
-- LLM fine-tuning/inference
-- Recommendation Systems
-- ML system
-- MLOps
-  Besides, I've worked on AI Agents, distributed system, cloud infrastructure.
+At Venera AI, I focused on LLM Post-Training and inference, engineering high-throughput pipelines for Qwen models using vLLM and Ray.
 
-Tasks include:
+During my time at Adobe, I worked as an AI Agent Intern, optimizing Whisper inference and reducing agentic hallucinations through long-context management with LangGraph.
 
-- ML/MLOps: PyTorch, Hugging Face, DeepSpeed, vLLM, Ray, Transformers, Aiflow
-- Distributed System: Ray, Spark, Kafka, HDFS
-- Cloud & Ops: AWS, Azure, GCP, Docker, Kubernetes, Helm, Terraform, GKE
+I also have a deep background in Recommendation Systems from my time at VCCorp, where I designed end-to-end ML pipelines and distributed Graph Neural Network (GNN) training to serve personalized content to millions of daily users.
 
-Furthermore, I have research experience, including publications at AAAI, as well as research conducted at Purdue University and MSU.
-
-Meanwhile, I'd love to keep an open mind to explore other related paths as well.
+## Education
+I hold a Master of Science in Computer Science from the University of Maryland, College Park (UMD) and a Bachelor of Science from Gettysburg College.
 
 <img src="{{ '/assets/img/favicon/bugcat-capoo.webp' | relative_url }}" alt="Bugcat Capoo" style="float: left; max-width: 50px; margin: 0 1rem 0.5rem 0;" />
 
