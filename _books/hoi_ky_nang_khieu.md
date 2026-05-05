@@ -19,20 +19,21 @@ status: reread # options: abandoned,finished,interested,paused,queued,reading,re
 
 Read below (recommend using web browser)
 
-One of the best books about my high school: Phổ Thông Năng Khiếu (VNU-HCM High School for the Gifted) back in Vietnam. This book captures so many small but unforgettable moments of student life at Năng Khiếu: the teachers, the traditions, the jokes only NK students understand, and the culture that makes the school so special.
+One of the best books about my high school: [Phổ Thông Năng Khiếu](https://www.linkedin.com/school/vnuhcmhgs/) (VNU-HCM High School for the Gifted) back in Vietnam. This book captures so many small but unforgettable moments of student life at Năng Khiếu: the teachers, the traditions, the jokes only NK students understand, and the culture that makes the school so special.
 
-Reading it brought back a lot of memories from my own years there. It reminds me how unique the experience was  the intense academic environment, the legendary teachers, the inside jokes between generations of students, and the strange but beautiful chaos that somehow defines Năng Khiếu.
+Reading it brought back a lot of memories from my own years there. It reminds me how unique the experience was the intense academic environment, the legendary teachers, the inside jokes between generations of students, and the strange but beautiful chaos that somehow defines Năng Khiếu.
 
-What I love about this book is that it doesn't try to glorify the school in a formal way. Instead, it tells stories  funny, nostalgic, sometimes a little weird  but all very real. Through these stories, you can feel the spirit of Năng Khiếu: a place where talented students gather, where friendships form through shared struggles, and where many unforgettable memories are created.
+What I love about this book is that it doesn't try to glorify the school in a formal way. Instead, it tells stories  funny, nostalgic, sometimes a little weird  but all very real.
+Through these stories, you can feel the spirit of Năng Khiếu: a place where talented students gather, where friendships form through shared struggles, and where many unforgettable memories are created.
 
 For many of us, Năng Khiếu is more than just a high school. It is a defining part of our youth and identity.
 
 It's truly a pride to be a student of one of the best high schools in southern Vietnam.
 
-School's LinkedIn: [linkedin.com/school/vnuhcmhgs](https://www.linkedin.com/school/vnuhcmhgs/) 
+<img src="{{ '/assets/img/book_covers/ptnk-flag.jpg' | relative_url }}" alt="school flag" style="float; max-width: 100px; margin: 0 0 10px 10px;" />
 
 <iframe
-  src="{{ '/assets/pdf/books/Hoi-Ky-Nang-Khieu.pdf#toolbar=0' | relative_url }}"
+  src="https://drive.google.com/file/d/1YFGgBgE9yqPdTHWlmnA8g_tVyEMeLQ6H/preview"
   width="90%"
   height="600px"
 ></iframe>
