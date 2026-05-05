@@ -1,25 +1,24 @@
 cv:
   name: Quan Nguyen
-  label: Machine Learning Engineer
+  headline: Machine Learning Engineer # label: Machine Learning Engineer # remove (not support this field in latest RenderCV)
   email: quanhn232@gmail.com
+  phone: "+17174206671"
   location: San Francisco, CA
-  image:
-  summary: Machine Learning Engineer at Google YouTube.
+  # image: # remove (not support this field in latest RenderCV)
+  # summary: Mach ine Learning Engineer at Google YouTube. # remove (not support this field in latest RenderCV)
 
   social_networks:
-    # - network: X
-    #   username: QuanHNguyen232
     - network: GitHub
       username: quanhn232
     - network: LinkedIn
       username: quanhn232
 
-  address:
-    street:
-    city: San Francisco
-    region: CA
-    postalCode:
-    countryCode: US
+  # address: # remove (not support this field in latest RenderCV)
+  #   street:
+  #   city: San Francisco
+  #   region: CA
+  #   postalCode:
+  #   countryCode: US
 
   sections:
     Education:
@@ -30,8 +29,9 @@ cv:
         degree: Master of Science
         start_date: "2024"
         end_date: "2026"
-        score: ""
-        courses: "Machine Learning"
+        score: "3.9"
+        highlights:
+          - Machine Learning
 
       - institution: Gettysburg College
         location: Gettysburg, PA
@@ -46,14 +46,14 @@ cv:
           - David Wills Scholarship recipient
 
     Experience:
-      - company: Google
+      - company: Google (YouTube)
         position: Software Engineer, Machine Learning
         location: San Bruno, CA
         start_date: "2026-05"
         end_date: present
         summary: Recommendation System
         highlights:
-          - incoming...
+          - Incoming...
 
       - company: Venera AI
         position: Machine Learning Engineer Intern
@@ -62,7 +62,7 @@ cv:
         end_date: "2025-12"
         summary: LLM Post-training, Inference & ML System
         highlights:
-          - Fine-tuned (SFT and distillation) LLM to compress knowledge using QLoRA + .
+          - Fine-tuned (SFT and distillation) LLM to compress knowledge using QLoRA + FSDP.
           - Deployed LLM for inference on Google TPU, establishing a cost-efficient alternative to GPUs.
           - Rebuilt data pipeline Spark with Ray Data, managed via Airflow.
           - Managed Ray Cluster for large-scale jobs like data processing, inference on CPU/GPU.
@@ -81,7 +81,7 @@ cv:
 
       - company: VCCorp Corporation
         position: Machine Learning Engineer Intern
-        location: HCMC, Vietnam
+        location: Vietnam
         start_date: "2024-06"
         end_date: "2024-08"
         summary: Recommendation System
@@ -100,72 +100,70 @@ cv:
     #     highlights:
     #       - Organized networking events for Vietnamese students and professionals to connect with each other.
 
-    Awards:
-      - title: ICPC Participant
-        authors:
-          - "ICPC"
-        date: "2022"
-        awarder: ICPC
-        url: https://icpc.io/
-        summary: ICPC is a competitive programming contest for university students.
+    # Awards: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
+    #   - title: ICPC Participant
+    #     authors:
+    #       - "ICPC"
+    #     date: "2022"
+    #     awarder: ICPC
+    #     url: https://icpc.io/
+    #     summary: ICPC is a competitive programming contest for university students.
 
-    Publications:
+    Publications: # PublicationEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#publicationentry)
       - title: Predicting Perceived Music Emotions with Respect to Instrument Combinations
         authors:
           - Nguyen, Viet Dung
-          - Nguyen, Quan H.
+          - "**Nguyen, Quan H.**"
           - Freedman, Richard G.
         publisher: AAAI
         date: "2024-07"
         url: https://ojs.aaai.org/index.php/AAAI/article/view/26910
         summary:
 
-    Skills:
+    Skills: # OnelineEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#onelineentry)
       - name: Machine Learning
         # level: Advanced
-        icon: fa-solid fa-hashtag
-        keywords: "LLM, Recommendation System, ML System, MLOps"
+        # icon: fa-solid fa-hashtag # remove (not support this field in latest RenderCV)
+        details: "LLM, Recommendation System, ML System, MLOps"
 
       - name: Languages
-        icon: fa-solid fa-code
-        keywords: Python, SQL, C/C++ (MPI, CUDA, OpenMP)
+        details: Python, SQL, C/C++ (MPI, CUDA, OpenMP)
       
       - name: ML/AI
-        icon: fa-solid fa-robot
-        keywords: PyTorch, vLLM, Ray, Hugging Face, DeepSpeed, LangChain, LangGraph, MCP
+        details: PyTorch, vLLM, Ray, Hugging Face, DeepSpeed, Weights & Biases (W&B), MLflow
       
       - name: Big Data
-        icon: fa-solid fa-database
-        keywords: Airflow, Spark, Kafka, Hadoop, Redis, MySQL, PostgreSQL, Weights & Biases (W&B), MLflow
+        details: Airflow, Spark, Kafka, Hadoop, Redis, PostgreSQL
       
-      - name: Cloud & MLOps
-        icon: fa-solid fa-cloud
-        keywords: AWS, Azure, GCP, Docker, Kubernetes, Helm, Grafana, Prometheus, GitHub Actions, Terraform
+      - name: Cloud
+        details: AWS, Azure, GCP
       
-    Languages:
+      - name: MLOps
+        details: Docker, Kubernetes, Helm, Grafana, Prometheus, GitHub Actions, Terraform
+      
+    Languages: # OnelineEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#onelineentry)
       - name: Vietnamese
         summary: "Native speaker"
 
       - name: English
         summary: "Fluent"
 
-    Interests:
+    Interests: # OnelineEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#onelineentry)
       - name: Guitar
-        icon: fa-solid fa-guitar
+        # icon: fa-solid fa-guitar # remove (not support this field in latest RenderCV)
         keywords: "classical"
 
-    Certificates:
+    Certificates: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
       - name: Fundamentals of MCP
         date: "2025-07"
-        issuer: Hugging Face
-        icon: fa-solid fa-location-dot
+        # issuer: Hugging Face
+        # icon: fa-solid fa-location-dot
 
-    Projects:
+    Projects: # NormalEntry type (https://docs.rendercv.com/user_guide/yaml_input_structure/cv/#normalentry)
       - name: High-Performance Distributed Training (HPC)
-        summary: Accelerated 3D scene reconstruction training by 50% by implementing distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
+        summary:
         highlights:
-          - Implemented distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
-          - Optimized the training process by 50% by implementing distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters.
+          - Accelerated 3D scene reconstruction training by 50% by implementing distributed training and profiling using C/C++, CUDA, PyTorch DDP with MPI protocol across multi-GPU HPC clusters, leading team of 3 students.
         start_date: "2025"
         end_date: "2025"
 
