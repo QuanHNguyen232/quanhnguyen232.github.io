@@ -12,8 +12,13 @@
         {{- entry.name -}}
         {%- if entry.level %} ({{ entry.level }}){% endif %}:</strong
       >
-      {% if entry.keywords %}
-        {% for keyword in entry.keywords %}
+      
+      {% capture skill_details %}
+        {% if entry.details %}{{ entry.details }}{% elsif entry.keywords %}{{ entry.keywords }}{% endif %}
+      {% endcapture %}
+
+      {% if skill_details %}
+        {% for keyword in skill_details %}
           {% if forloop.last %}
             {{ keyword }}
           {% else %}
